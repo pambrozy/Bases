@@ -87,9 +87,6 @@ public enum Base85 {
                 return ""
             }
 
-            // 3 bytes of data                  4 bytes of data
-            // represented as 4 6-bit digits    represented as 5 digits
-
             let padding = data.count.isMultiple(of: 4) ? 0 : 4 - (data.count % 4)
             let padCharacterCount = padding * 5 / 4
 

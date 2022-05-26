@@ -5,7 +5,6 @@
 //  Created by Przemek Ambroży on 06/05/2022.
 //
 
-import Algorithms
 import Foundation
 
 public enum Base16 {
@@ -101,6 +100,7 @@ public enum Base16 {
                     }
                     return upper << 4 | (lower & 0xF)
                 }
+
             return Data(data)
         }
     }

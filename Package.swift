@@ -10,21 +10,13 @@ let package = Package(
             targets: ["Bases"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
-    ],
     targets: [
-        .target(
-            name: "Bases",
-            dependencies: [
-                .product(name: "Algorithms", package: "swift-algorithms")
-            ]
-        ),
+        .target(name: "Bases"),
         .testTarget(
             name: "BasesTests",
             dependencies: ["Bases"]
         ),
-        .target(
+        .executableTarget(
             name: "BasesCLI",
             dependencies: ["Bases"]
         )
