@@ -128,7 +128,7 @@ extension Base64.Alphabet {
         lineSeparator: nil
     )
 
-    /// The Base64 transfer encoding for MIME alphabet found in RFC 2045 with the maximal line length of 76.
+    /// The Base64 transfer encoding for MIME alphabet found in RFC 2045 with the maximum line length of 76.
     public static let mime = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -159,8 +159,8 @@ extension Base64.Alphabet {
     )
 
 
-    /// Returns the Base64 transfer encoding for MIME alphabet with a specified maximal line length.
-    /// - Parameter lineLength: The maximal line length (must be positive).
+    /// Returns the Base64 transfer encoding for MIME alphabet with a specified maximum line length.
+    /// - Parameter lineLength: The maximum line length (must be positive).
     /// - Returns: The Base64 transfer encoding for MIME alphabet found in RFC 2045.
     /// - Throws: `LineSeparatorError` when the line length is not positive.
     public static func mime(lineLength: Int) throws -> Self {

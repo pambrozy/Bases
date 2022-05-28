@@ -23,7 +23,7 @@ public enum Base32 {
         }
 
         public init(characters: [[Character]], padding: Character?) throws {
-            guard characters.count == 32, characters.allSatisfy({ !$0.isEmpty }) else {
+            guard characters.count == 32 else {
                 throw AlphabetError.wrongNumberOfCharacters
             }
 
@@ -85,34 +85,42 @@ public enum Base32 {
             for chunk in data.chunks(ofCount: 5) {
                 output += [
                     // [0](11111000)
+                    // 11111___ ________ ________ ________ ________
                     alphabet.characters[Int(
                         chunk[chunk.startIndex] >> 3
                     )],
                     // [0](00000111) + [1](11000000)
+                    // _____111 11______ ________ ________ ________
                     alphabet.characters[Int(
                         ((chunk[chunk.startIndex] & 0b111) << 2) | (chunk[chunk.startIndex + 1] >> 6)
                     )],
                     // [1](00111110)
+                    // ________ __11111_ ________ ________ ________
                     alphabet.characters[Int(
                         (chunk[chunk.startIndex + 1] >> 1) & 0b11111
                     )],
                     // [1](00000001) + [2](11110000)
+                    // ________ _______1 1111____ ________ ________
                     alphabet.characters[Int(
                         ((chunk[chunk.startIndex + 1] & 0b1) << 4) | (chunk[chunk.startIndex + 2] >> 4)
                     )],
                     // [2](00001111) + [3](10000000)
+                    // ________ ________ ____1111 1_______ ________
                     alphabet.characters[Int(
                         (chunk[chunk.startIndex + 2] & 0b1111) << 1 | (chunk[chunk.startIndex + 3] >> 7)
                     )],
                     // [3](01111100)
+                    // ________ ________ ________ _11111__ ________
                     alphabet.characters[Int(
                         (chunk[chunk.startIndex + 3] >> 2) & 0b11111
                     )],
                     // [3](00000011) + [4](11100000)
+                    // ________ ________ ________ ______11 111_____
                     alphabet.characters[Int(
-                        (chunk[chunk.startIndex + 3] & 0b11) | (chunk[chunk.startIndex + 4] >> 5)
+                        (chunk[chunk.startIndex + 3] & 0b11) << 3 | (chunk[chunk.startIndex + 4] >> 5)
                     )],
                     // [4](00011111)
+                    // ________ ________ ________ ________ ___11111
                     alphabet.characters[Int(
                         (chunk[chunk.startIndex + 4] & 0b11111)
                     )]

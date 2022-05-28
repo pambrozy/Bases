@@ -33,11 +33,11 @@ func printValues(_ values: [UInt8?]) {
         .joined(separator: "\n")
     print(s)
 }
-let data = "ABCDEFGHIJ".data(using: .utf8)!
+let data = "01234567890123456789012345678901234567890123456789012345678901234567890123456789".data(using: .utf8)!
 print("DATA IS", Array(data))
 
-let encoded = Base85.Encoder(alphabet: .ascii).encode(data)
-let decoded = try Base85.Decoder(alphabet: .ascii).decode(encoded)
+let encoded = Base64.Encoder(alphabet: .mime).encode(data)
+let decoded = try Base64.Decoder(alphabet: .mime).decode(encoded)
 
 print("encoded as", encoded, "and decoded as", String(data: decoded, encoding: .utf8))
 //print("Encoded as", encoded)
