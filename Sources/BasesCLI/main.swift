@@ -33,11 +33,13 @@ func printValues(_ values: [UInt8?]) {
         .joined(separator: "\n")
     print(s)
 }
-let data = "01234567890123456789012345678901234567890123456789012345678901234567890123456789".data(using: .utf8)!
+let datax = "ABCD    EFGHIJ".data(using: .utf8)!
+
+let data = Data([0x10, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x08, 0x00, 0x20, 0x0C, 0x41, 0x7A])
 print("DATA IS", Array(data))
 
-let encoded = Base64.Encoder(alphabet: .mime).encode(data)
-let decoded = try Base64.Decoder(alphabet: .mime).decode(encoded)
+let encoded = Base85.Encoder(alphabet: .rfc1924).encode(data)
+let decoded = try Base85.Decoder(alphabet: .rfc1924).decode(encoded)
 
 print("encoded as", encoded, "and decoded as", String(data: decoded, encoding: .utf8))
 //print("Encoded as", encoded)
@@ -67,8 +69,8 @@ let adoebAscii = try? Base85.Alphabet(
     ], startDelimeter: "<~", endDelimeter: "~>", fourZeros: "z", fourSpaces: nil)
 print("AA", adoebAscii)
 
-printChars(Base85.Alphabet.adobeAscii85.characters)
-printValues(Base85.Alphabet.adobeAscii85.values)
+printChars(Base85.Alphabet.rfc1924.characters)
+printValues(Base85.Alphabet.rfc1924.values)
 
 
 
