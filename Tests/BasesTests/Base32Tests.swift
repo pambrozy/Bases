@@ -59,7 +59,7 @@ final class Bases32Tests: XCTestCase {
 
     }
 
-    func testBuiltInAlphabets() throws {
+    func testBuiltInRfc4648Alphabet() throws {
         let rfc4648 = try Base32.Alphabet(
             characters: [
                 ["A", "a"], ["B", "b"], ["C", "c"], ["D", "d"], ["E", "e"], ["F", "f"], ["G", "g"], ["H", "h"],
@@ -70,7 +70,9 @@ final class Bases32Tests: XCTestCase {
             padding: "="
         )
         XCTAssertEqual(rfc4648, Base32.Alphabet.rfc4648)
+    }
 
+    func testBuiltInZBase32Alphabet() throws {
         let zBase32 = try Base32.Alphabet(
             characters: [
                 ["y", "Y"], ["b", "B"], ["n", "N"], ["d", "D"], ["r", "R"], ["f", "F"], ["g", "G"], ["8", "8"],
@@ -81,7 +83,9 @@ final class Bases32Tests: XCTestCase {
             padding: nil
         )
         XCTAssertEqual(zBase32, Base32.Alphabet.zBase32)
+    }
 
+    func testBuiltInCrockfordAlphabet() throws {
         let crockford = try Base32.Alphabet(
             characters: [
                 ["0", "o", "O"],
@@ -99,7 +103,9 @@ final class Bases32Tests: XCTestCase {
             padding: nil
         )
         XCTAssertEqual(crockford, Base32.Alphabet.crockford)
+    }
 
+    func testBuiltInBase32HexAlphabet() throws {
         let base32hex = try Base32.Alphabet(
             characters: [
                 ["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"],
@@ -110,18 +116,22 @@ final class Bases32Tests: XCTestCase {
             padding: "="
         )
         XCTAssertEqual(base32hex, Base32.Alphabet.base32hex)
+    }
 
+    func testBuiltInGeohashAlphabet() throws {
         let geohash = try Base32.Alphabet(
             characters: [
                 ["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"],
                 ["8", "8"], ["9", "9"], ["b", "B"], ["c", "C"], ["d", "D"], ["e", "E"], ["f", "F"], ["g", "G"],
                 ["h", "H"], ["j", "J"], ["k", "K"], ["m", "M"], ["n", "N"], ["p", "P"], ["q", "Q"], ["r", "R"],
-                ["s", "S"], ["t", "T"], ["u", "U"], ["v", "V"], ["w", "W"], ["x", "X"], ["y", "Y"], ["z", "Z"],
+                ["s", "S"], ["t", "T"], ["u", "U"], ["v", "V"], ["w", "W"], ["x", "X"], ["y", "Y"], ["z", "Z"]
             ],
             padding: nil
         )
         XCTAssertEqual(geohash, Base32.Alphabet.geohash)
+    }
 
+    func testBuiltInWordSafeAlphabet() throws {
         let wordSafe = try Base32.Alphabet(
             characters: [
                 ["2"], ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"],

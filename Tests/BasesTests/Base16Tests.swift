@@ -16,7 +16,7 @@ final class Bases16Tests: XCTestCase {
             ("foo", "666F6F"),
             ("foob", "666F6F62"),
             ("fooba", "666F6F6261"),
-            ("foobar", "666F6F626172"),
+            ("foobar", "666F6F626172")
         ]
 
         for (decodedString, encoded) in data {
@@ -41,7 +41,7 @@ final class Bases16Tests: XCTestCase {
             ("foo", "666f6f"),
             ("foob", "666f6f62"),
             ("fooba", "666f6f6261"),
-            ("foobar", "666f6f626172"),
+            ("foobar", "666f6f626172")
         ]
 
         for (decodedString, encoded) in data {

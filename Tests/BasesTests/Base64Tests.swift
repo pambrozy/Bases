@@ -13,7 +13,7 @@ final class Bases64Tests: XCTestCase {
             ("foo", "Zm9v"),
             ("foob", "Zm9vYg=="),
             ("fooba", "Zm9vYmE="),
-            ("foobar", "Zm9vYmFy"),
+            ("foobar", "Zm9vYmFy")
         ]
 
         for (decodedString, encoded) in data {
@@ -55,7 +55,7 @@ final class Bases64Tests: XCTestCase {
 
     }
 
-    func testBuiltInAlphabets() throws {
+    func testBuiltInStandardAlphabet() throws {
         let standard = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -67,7 +67,9 @@ final class Bases64Tests: XCTestCase {
             lineSeparator: nil
         )
         XCTAssertEqual(standard, Base64.Alphabet.standard)
+    }
 
+    func testBuiltInBase64urlAlphabet() throws {
         let base64url = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -79,7 +81,9 @@ final class Bases64Tests: XCTestCase {
             lineSeparator: nil
         )
         XCTAssertEqual(base64url, Base64.Alphabet.base64url)
+    }
 
+    func testBuiltInUtf7Alphabet() throws {
         let utf7 = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -91,7 +95,9 @@ final class Bases64Tests: XCTestCase {
             lineSeparator: nil
         )
         XCTAssertEqual(utf7, Base64.Alphabet.utf7)
+    }
 
+    func testBuiltInImapMailboxNamesAlphabet() throws {
         let imapMailboxNames = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -103,7 +109,9 @@ final class Bases64Tests: XCTestCase {
             lineSeparator: nil
         )
         XCTAssertEqual(imapMailboxNames, Base64.Alphabet.imapMailboxNames)
+    }
 
+    func testBuiltInMimeAlphabet() throws {
         let mime = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
