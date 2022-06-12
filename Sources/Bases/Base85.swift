@@ -71,15 +71,9 @@ public enum Base85 {
 
     public struct Encoder {
         let alphabet: Alphabet
-        let pad: Bool
 
-        /// <#Description#>
-        /// - Parameters:
-        ///   - alphabet: <#alphabet description#>
-        ///   - pad: Whether to pad the data if the alphabet includes the padding character.
-        public init(alphabet: Alphabet, pad: Bool = true) {
+        public init(alphabet: Alphabet) {
             self.alphabet = alphabet
-            self.pad = pad
         }
 
         public func encode<T: DataProtocol>(_ data: T) -> String {
@@ -91,9 +85,6 @@ public enum Base85 {
             let padCharacterCount = padding * 5 / 4
 
             let data = Array(data) + [UInt8](repeating: 0, count: padding)
-
-            // TODO: Check if necessary
-//            output.reserveCapacity(data.count * 5 / 4)
 
             var output = data
                 .chunks(ofCount: 4)

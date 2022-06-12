@@ -52,7 +52,6 @@ final class Bases64Tests: XCTestCase {
         XCTAssertThrowsError(try decoder.decode("_")) { error in
             XCTAssertEqual(error as? DecodingError, DecodingError.valuesNotInAlphabet)
         }
-
     }
 
     func testBuiltInStandardAlphabet() throws {

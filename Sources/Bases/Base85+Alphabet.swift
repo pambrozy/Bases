@@ -109,7 +109,9 @@ extension Base85.Alphabet {
         fourSpaces: nil
     )
 
-    public static let rfc1924 = Self(
+    /// The alphabet defined in RFC 1924.
+    /// The scheme of the encoding and decoding differs from the one implemented in this package.
+    public static let rfc1924Like = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",
             "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",

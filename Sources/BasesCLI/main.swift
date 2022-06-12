@@ -35,11 +35,16 @@ func printValues(_ values: [UInt8?]) {
 }
 let datax = "ABCD    EFGHIJ".data(using: .utf8)!
 
-let data = Data([0x10, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x08, 0x00, 0x20, 0x0C, 0x41, 0x7A])
+let data = Data([
+    0x10, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x08, 0x08, 0x00, 0x20, 0x0C, 0x41, 0x7A
+])
+
+
 print("DATA IS", Array(data))
 
-let encoded = Base85.Encoder(alphabet: .zeromq).encode(data)
-let decoded = try Base85.Decoder(alphabet: .zeromq).decode(encoded)
+let encoded = Base85.Encoder(alphabet: .rfc1924Like).encode(data)
+let decoded = try Base85.Decoder(alphabet: .rfc1924Like).decode(encoded)
 
 print("encoded as", encoded, "and decoded as", String(data: decoded, encoding: .utf8))
 //print("Encoded as", encoded)
