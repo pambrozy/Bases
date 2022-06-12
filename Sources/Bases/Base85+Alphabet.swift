@@ -9,6 +9,7 @@
 import Foundation
 
 extension Base85.Alphabet {
+    /// The alphabet consisting of the ASCII characters `!` through `u`.
     public static let ascii = Self(
         uncheckedCharacters: [
             "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0",
@@ -76,6 +77,8 @@ extension Base85.Alphabet {
         fourSpaces: "y"
     )
 
+    /// The Adobe Acii85 alphabet.
+    /// Uses `<~` as start delimeter and `~>` as end delimeter.
     public static let adobeAscii85 = Self(
         uncheckedCharacters: [
             "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0",
@@ -109,8 +112,8 @@ extension Base85.Alphabet {
         fourSpaces: nil
     )
 
-    /// The alphabet defined in RFC 1924.
-    /// The scheme of the encoding and decoding differs from the one implemented in this package.
+    /// The alphabet defined in [RFC 1924](https://datatracker.ietf.org/doc/html/rfc1924).
+    /// The way the encoder in this package works differs from the scheme defined in the RFC 1924.
     public static let rfc1924Like = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",

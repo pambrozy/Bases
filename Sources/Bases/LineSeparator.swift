@@ -8,8 +8,11 @@
 
 import Foundation
 
+/// A struct representing the line separator.
 public struct LineSeparator: Equatable {
+    /// The string to insert when the length of the encoded string exceeds the ``length``.
     public let separator: String
+    /// The maximum length of the encoded string, after which the ``separator`` will be inserted.
     public let length: Int
 
     init(separator: String, uncheckedLength: Int) {
@@ -17,6 +20,10 @@ public struct LineSeparator: Equatable {
         self.length = uncheckedLength
     }
 
+    /// Creates a new line separator.
+    /// - Parameters:
+    ///   - separator: The string to insert when the length of the encoded string exceeds the ``length``.
+    ///   - length: The maximum length of the encoded string, after which the ``separator`` will be inserted.
     public init(separator: String, length: Int) throws {
         guard length > 0 else {
             throw LineSeparatorError.nonPositiveLength

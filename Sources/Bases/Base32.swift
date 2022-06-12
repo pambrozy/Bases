@@ -8,13 +8,20 @@
 
 import Foundation
 
+/// The Base-32 encoding.
 public enum Base32 {
 
     // MARK: - Alphabet
 
+    /// An alphabet definig a set of characters used for the Base-32 encoding.
     public struct Alphabet: Equatable {
+        /// The ordered array mapping the 32 values to ASCII character codes.
         public let characters: [Character]
+
+        /// The ordered array mapping the 128 ASCII character codes to values.
         public let values: [UInt8?]
+
+        /// The optional padding character used to pad the data.
         public let padding: Character?
 
         init(uncheckedCharacters: [Character], uncheckedValues: [UInt8?], padding: Character?) {
@@ -23,6 +30,12 @@ public enum Base32 {
             self.padding = padding
         }
 
+        /// Creates a new alphabet.
+        /// - Parameters:
+        ///   - characters: An array of 32 arrays of ASCII characters.
+        ///   Each of the 32 arrays should consist of at least one character.
+        ///   The first character in the array will be used for encoding data.
+        ///   - padding: The optional padding character used to pad the data.
         public init(characters: [[Character]], padding: Character?) throws {
             guard characters.count == 32 else {
                 throw AlphabetError.wrongNumberOfCharacters
@@ -63,13 +76,20 @@ public enum Base32 {
 
     // MARK: - Encoder
 
+    /// The Base-32 Encoder.
     public struct Encoder {
-        let alphabet: Alphabet
+        /// The alphabet used to encode data.
+        public let alphabet: Alphabet
 
+        /// Creates a new encoder.
+        /// - Parameter alphabet: The alphabet to use when encoding data.
         public init(alphabet: Alphabet) {
             self.alphabet = alphabet
         }
 
+        /// Encodes the given data.
+        /// - Parameter data: The data to encode.
+        /// - Returns: A string containing the Base-32 encoded data.
         public func encode<T: DataProtocol>(_ data: T) -> String {
             guard !data.isEmpty else {
                 return ""
@@ -139,13 +159,20 @@ public enum Base32 {
 
     // MARK: - Decoder
 
+    /// The Base-32 Decoder.
     public struct Decoder {
+        /// The alphabet used to decode data.
         public let alphabet: Alphabet
 
+        /// Creates a new decoder.
+        /// - Parameter alphabet: The alphabet to use when decoding data.
         public init(alphabet: Alphabet) {
             self.alphabet = alphabet
         }
 
+        /// Decodes a given string.
+        /// - Parameter text: The string containing the Base-32 encoded data.
+        /// - Returns: The decoded data.
         public func decode(_ text: String) throws -> Data {
             guard !text.isEmpty else {
                 return Data()
@@ -168,10 +195,10 @@ public enum Base32 {
                 let characters = try chunk
                     .map { character -> UInt8 in
                         guard let asciiValue = character.asciiValue else {
-                            throw DecodingError.nonAsciiCharacters
+                            throw BaseDecodingError.nonAsciiCharacters
                         }
                         guard let value = alphabet.values[Int(asciiValue)] else {
-                            throw DecodingError.valuesNotInAlphabet
+                            throw BaseDecodingError.valuesNotInAlphabet
                         }
                         return value
                     }

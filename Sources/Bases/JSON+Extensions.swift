@@ -21,7 +21,7 @@ extension JSONDecoder.DataDecodingStrategy {
             do {
                 return try Base16.Decoder(ignoreUnknownCharacters: true, alphabet: alphabet).decode(text)
             } catch {
-                throw Swift.DecodingError.dataCorruptedError(
+                throw DecodingError.dataCorruptedError(
                     in: container,
                     debugDescription: "Cannot decode the Base-16 string"
                 )
@@ -39,7 +39,7 @@ extension JSONDecoder.DataDecodingStrategy {
             do {
                 return try Base32.Decoder(alphabet: alphabet).decode(text)
             } catch {
-                throw Swift.DecodingError.dataCorruptedError(
+                throw DecodingError.dataCorruptedError(
                     in: container,
                     debugDescription: "Cannot decode the Base-32 string"
                 )
@@ -57,7 +57,7 @@ extension JSONDecoder.DataDecodingStrategy {
             do {
                 return try Base85.Decoder(alphabet: alphabet).decode(text)
             } catch {
-                throw Swift.DecodingError.dataCorruptedError(
+                throw DecodingError.dataCorruptedError(
                     in: container,
                     debugDescription: "Cannot decode the Base-85 string"
                 )

@@ -65,13 +65,13 @@ final class Bases16Tests: XCTestCase {
     func testDecoding() {
         var decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: .lowercase)
         XCTAssertThrowsError(try decoder.decode("000z")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.containsUnknownCharacters)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
         }
         XCTAssertThrowsError(try decoder.decode("000")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.wrongNumberOfBytes)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.wrongNumberOfBytes)
         }
         XCTAssertThrowsError(try decoder.decode("000")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.wrongNumberOfBytes)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.wrongNumberOfBytes)
         }
 
         let invalidAlphabet = Base16.Alphabet(
@@ -81,10 +81,10 @@ final class Bases16Tests: XCTestCase {
         decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: invalidAlphabet)
 
         XCTAssertThrowsError(try decoder.decode("0¡")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.nonAsciiCharacters)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
         }
         XCTAssertThrowsError(try decoder.decode("00")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.valuesNotInAlphabet)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
         }
     }
 

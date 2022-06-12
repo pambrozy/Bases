@@ -9,7 +9,7 @@
 import Foundation
 
 extension Base64.Alphabet {
-    /// The standard base64 alphabet found in RFC 4648 §4.
+    /// The standard alphabet defined in [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648.html).
     public static let standard = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -39,7 +39,7 @@ extension Base64.Alphabet {
         lineSeparator: nil
     )
 
-    /// The base64url alphabet found in RFC 4648 §5. URL- and filename-safe.
+    /// The base64url alphabet defined in [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648.html).
     public static let base64url = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -69,7 +69,7 @@ extension Base64.Alphabet {
         lineSeparator: nil
     )
 
-    /// The Base64 for UTF-7 alphabet found in RFC 2152.
+    /// The Base64 for UTF-7 alphabet defined in [RFC 2152](https://datatracker.ietf.org/doc/html/rfc2152).
     public static let utf7 = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -99,7 +99,8 @@ extension Base64.Alphabet {
         lineSeparator: nil
     )
 
-    /// The Base64 for IMAP mailbox names alphabet found in RFC 3501.
+    /// The Base64 for IMAP mailbox names alphabet defined in
+    /// [RFC 3501](https://datatracker.ietf.org/doc/html/rfc3501).
     public static let imapMailboxNames = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -129,7 +130,8 @@ extension Base64.Alphabet {
         lineSeparator: nil
     )
 
-    /// The Base64 transfer encoding for MIME alphabet found in RFC 2045 with the maximum line length of 76.
+    /// The Base64 transfer encoding for MIME alphabet found in
+    /// [RFC 2045](https://datatracker.ietf.org/doc/html/rfc2045) with the maximum line length of 76.
     public static let mime = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -161,7 +163,8 @@ extension Base64.Alphabet {
 
     /// Returns the Base64 transfer encoding for MIME alphabet with a specified maximum line length.
     /// - Parameter lineLength: The maximum line length (must be positive).
-    /// - Returns: The Base64 transfer encoding for MIME alphabet found in RFC 2045.
+    /// - Returns: The Base64 transfer encoding for MIME alphabet found in
+    /// [RFC 2045](https://datatracker.ietf.org/doc/html/rfc2045).
     /// - Throws: `LineSeparatorError` when the line length is not positive.
     public static func mime(lineLength: Int) throws -> Self {
         Self(

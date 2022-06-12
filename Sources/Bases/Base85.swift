@@ -8,16 +8,29 @@
 
 import Foundation
 
+/// The Base-85 encoding.
 public enum Base85 {
 
     // MARK: - Alphabet
 
+    /// An alphabet definig a set of characters used for the Base-85 encoding.
     public struct Alphabet: Equatable {
+        /// The ordered array mapping the 85 values to ASCII character codes.
         public let characters: [Character]
+
+        /// The ordered array mapping the 128 ASCII character codes to values.
         public let values: [UInt8?]
+
+        /// The delimeter at the beginning of the encoded string.
         public let startDelimeter: String?
+
+        /// The delimeter at the end of the encoded data.
         public let endDelimeter: String?
+
+        /// An optional character representing data consisting of four `0` bytes.
         public let fourZeros: Character?
+
+        /// An optional character representing data consisting of four spaces.
         public let fourSpaces: Character?
 
         init(
@@ -36,6 +49,13 @@ public enum Base85 {
             self.fourSpaces = fourSpaces
         }
 
+        /// Creates a new alphabet.
+        /// - Parameters:
+        ///   - characters: An array of 64 ASCII characters.
+        ///   - startDelimeter: The delimeter at the beginning of the encoded string.
+        ///   - endDelimeter: The delimeter at the end of the encoded data.
+        ///   - fourZeros: An optional character representing data consisting of four `0` bytes.
+        ///   - fourSpaces: An optional character representing data consisting of four spaces.
         public init(
             characters: [Character],
             startDelimeter: String?,
@@ -70,13 +90,19 @@ public enum Base85 {
 
     // MARK: - Encoder
 
+    /// The Base-85 Encoder.
     public struct Encoder {
         let alphabet: Alphabet
 
+        /// Creates a new encoder.
+        /// - Parameter alphabet: The alphabet to use when encoding data.
         public init(alphabet: Alphabet) {
             self.alphabet = alphabet
         }
 
+        /// Encodes the given data.
+        /// - Parameter data: The data to encode.
+        /// - Returns: A string containing the Base-32 encoded data.
         public func encode<T: DataProtocol>(_ data: T) -> String {
             guard !data.isEmpty else {
                 return ""
@@ -149,13 +175,20 @@ public enum Base85 {
 
     // MARK: - Decoder
 
+    /// The Base-32 Decoder.
     public struct Decoder {
+        /// The alphabet used to decode data.
         public let alphabet: Alphabet
 
+        /// Creates a new decoder.
+        /// - Parameter alphabet: The alphabet to use when decoding data.
         public init(alphabet: Alphabet) {
             self.alphabet = alphabet
         }
 
+        /// Decodes a given string.
+        /// - Parameter text: The string containing the Base-85 encoded data.
+        /// - Returns: The decoded data.
         public func decode(_ text: String) throws -> Data {
             guard !text.isEmpty else {
                 return Data()
@@ -184,10 +217,10 @@ public enum Base85 {
             var data = try text
                 .map { character -> UInt8 in
                     guard let asciiValue = character.asciiValue else {
-                        throw DecodingError.nonAsciiCharacters
+                        throw BaseDecodingError.nonAsciiCharacters
                     }
                     guard let value = alphabet.values[Int(asciiValue)] else {
-                        throw DecodingError.valuesNotInAlphabet
+                        throw BaseDecodingError.valuesNotInAlphabet
                     }
                     return value
                 }

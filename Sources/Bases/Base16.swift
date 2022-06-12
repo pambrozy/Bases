@@ -8,12 +8,17 @@
 
 import Foundation
 
+/// The Base-16 encoding.
 public enum Base16 {
 
     // MARK: - Alphabet
 
+    /// An alphabet definig a set of characters used for the Base-16 encoding.
     public struct Alphabet {
+        /// The ordered array mapping the 16 values to ASCII character codes.
         public let characters: [Character]
+
+        /// The ordered array mapping the 128 ASCII character codes to values.
         public let values: [UInt8?]
 
         init(uncheckedCharacters: [Character], uncheckedValues: [UInt8?]) {
@@ -21,6 +26,8 @@ public enum Base16 {
             self.values = uncheckedValues
         }
 
+        /// Creates a new alphabet.
+        /// - Parameter characters: An array of 16 ASCII characters.
         public init(characters: [Character]) throws {
             guard characters.count == 16 else {
                 throw AlphabetError.wrongNumberOfCharacters
@@ -45,13 +52,20 @@ public enum Base16 {
 
     // MARK: - Encoder
 
+    /// The Base-16 Encoder.
     public struct Encoder {
+        /// The alphabet used to encode data.
         public let alphabet: Alphabet
 
+        /// Creates a new encoder.
+        /// - Parameter alphabet: The alphabet to use when encoding data.
         public init(alphabet: Alphabet = .uppercase) {
             self.alphabet = alphabet
         }
 
+        /// Encodes the given data.
+        /// - Parameter data: The data to encode.
+        /// - Returns: A string containing the Base-16 encoded data.
         public func encode<T: DataProtocol>(_ data: T) -> String {
             var output = ""
             output.reserveCapacity(data.count * 2)
@@ -67,25 +81,36 @@ public enum Base16 {
 
     // MARK: - Decoder
 
+    /// The Base-16 Decoder.
     public struct Decoder {
+        /// Whether to ignore characters not found in the alphabet.
         public let ignoreUnknownCharacters: Bool
+
+        /// The alphabet used to decode data.
         public let alphabet: Alphabet
 
+        /// Creates a new decoder.
+        /// - Parameters:
+        ///   - ignoreUnknownCharacters: Whether to ignore characters not found in the alphabet.
+        ///   - alphabet: The alphabet to use when decoding data.
         public init(ignoreUnknownCharacters: Bool, alphabet: Alphabet) {
             self.ignoreUnknownCharacters = ignoreUnknownCharacters
             self.alphabet = alphabet
         }
 
+        /// Decodes a given string.
+        /// - Parameter text: The string containing the Base-16 encoded data.
+        /// - Returns: The decoded data.
         public func decode(_ text: String) throws -> Data {
             var text = text
             if ignoreUnknownCharacters {
                 text = text.filter { alphabet.characters.contains($0) }
             } else if text.contains(where: { !alphabet.characters.contains($0) }) {
-                throw DecodingError.containsUnknownCharacters
+                throw BaseDecodingError.valuesNotInAlphabet
             }
 
             guard text.count % 2 == 0 else {
-                throw DecodingError.wrongNumberOfBytes
+                throw BaseDecodingError.wrongNumberOfBytes
             }
 
             let data = try text
@@ -93,11 +118,11 @@ public enum Base16 {
                 .map { chunk -> UInt8 in
                     guard let upperAscii = chunk.first?.asciiValue,
                           let lowerAscii = chunk.last?.asciiValue else {
-                        throw DecodingError.nonAsciiCharacters
+                        throw BaseDecodingError.nonAsciiCharacters
                     }
                     guard let upper = alphabet.values[Int(upperAscii)],
                           let lower = alphabet.values[Int(lowerAscii)] else {
-                        throw DecodingError.valuesNotInAlphabet
+                        throw BaseDecodingError.valuesNotInAlphabet
                     }
                     return upper << 4 | (lower & 0xF)
                 }

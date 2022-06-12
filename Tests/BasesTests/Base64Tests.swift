@@ -55,10 +55,10 @@ final class Bases64Tests: XCTestCase {
     func testDecoding() {
         let decoder = Base64.Decoder(alphabet: .standard)
         XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.nonAsciiCharacters)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
         }
         XCTAssertThrowsError(try decoder.decode("_")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.valuesNotInAlphabet)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
         }
     }
 

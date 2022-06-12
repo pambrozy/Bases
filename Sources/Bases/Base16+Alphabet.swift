@@ -9,6 +9,7 @@
 import Foundation
 
 extension Base16.Alphabet {
+    /// The Base-16 uppercase alphabet, consisting of digits 0-9 and uppercase letters A-F.
     public static let uppercase = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"
@@ -33,6 +34,7 @@ extension Base16.Alphabet {
         ]
     )
 
+    /// The Base-16 lowercase alphabet, consisting of digits 0-9 and lowercase letters a-f.
     public static let lowercase = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"

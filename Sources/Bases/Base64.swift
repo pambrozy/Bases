@@ -8,14 +8,23 @@
 
 import Foundation
 
+/// The Base-64 encoding.
 public enum Base64 {
 
     // MARK: - Alphabet
 
+    /// An alphabet definig a set of characters used for the Base-64 encoding.
     public struct Alphabet: Equatable {
+        /// The ordered array mapping the 64 values to ASCII character codes.
         public let characters: [Character]
+
+        /// The ordered array mapping the 128 ASCII character codes to values.
         public let values: [UInt8?]
+
+        /// The optional padding character used to pad the data.
         public let padding: Character?
+
+        /// The optional line separator used when the encoded text exceeds a given length.
         public let lineSeparator: LineSeparator?
 
         init(
@@ -30,6 +39,12 @@ public enum Base64 {
             self.lineSeparator = lineSeparator
         }
 
+        /// Creates a new alphabet.
+
+        /// - Parameters:
+        ///   - characters: An array of 64 ASCII characters.
+        ///   - padding: The optional padding character used to pad the data.
+        ///   - lineSeparator: The optional line separator used when the encoded text exceeds a given length.
         public init(characters: [Character], padding: Character?, lineSeparator: LineSeparator?) throws {
             guard characters.count == 64 else {
                 throw AlphabetError.wrongNumberOfCharacters
@@ -56,19 +71,26 @@ public enum Base64 {
 
     // MARK: - Encoder
 
+    /// The Base-64 Encoder.
     public struct Encoder {
-        let alphabet: Alphabet
-        let pad: Bool
+        /// The alphabet used to encode data.
+        public let alphabet: Alphabet
 
-        /// <#Description#>
+        /// Whether to pad the data if the alphabet includes the padding character.
+        public let pad: Bool
+
+        /// Creates a new encoder.
         /// - Parameters:
-        ///   - alphabet: <#alphabet description#>
+        ///   - alphabet: The alphabet to use when encoding data.
         ///   - pad: Whether to pad the data if the alphabet includes the padding character.
         public init(alphabet: Alphabet, pad: Bool = true) {
             self.alphabet = alphabet
             self.pad = pad
         }
 
+        /// Encodes the given data.
+        /// - Parameter data: The data to encode.
+        /// - Returns: A string containing the Base-64 encoded data.
         public func encode<T: DataProtocol>(_ data: T) -> String {
             guard !data.isEmpty else {
                 return ""
@@ -120,13 +142,20 @@ public enum Base64 {
 
     // MARK: - Decoder
 
+    /// The Base-64 Decoder.
     public struct Decoder {
+        /// The alphabet used to decode data.
         public let alphabet: Alphabet
 
+        /// Creates a new decoder.
+        /// - Parameter alphabet: The alphabet to use when decoding data.
         public init(alphabet: Alphabet) {
             self.alphabet = alphabet
         }
 
+        /// Decodes a given string.
+        /// - Parameter text: The string containing the Base-32 encoded data.
+        /// - Returns: The decoded data.
         public func decode(_ text: String) throws -> Data {
             guard !text.isEmpty else {
                 return Data()
@@ -154,10 +183,10 @@ public enum Base64 {
                 let characters = try chunk
                     .map { character -> UInt8 in
                         guard let asciiValue = character.asciiValue else {
-                            throw DecodingError.nonAsciiCharacters
+                            throw BaseDecodingError.nonAsciiCharacters
                         }
                         guard let value = alphabet.values[Int(asciiValue)] else {
-                            throw DecodingError.valuesNotInAlphabet
+                            throw BaseDecodingError.valuesNotInAlphabet
                         }
                         return value
                     }

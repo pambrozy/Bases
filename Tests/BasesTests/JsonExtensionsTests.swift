@@ -30,7 +30,7 @@ final class JsonExtensionsTests: XCTestCase {
         let decoded = try decoder.decode(Example.self, from: validData)
         XCTAssertEqual(decoded.data, Data([0x41, 0x42, 0x43]))
         XCTAssertThrowsError(try decoder.decode(Example.self, from: invalidData)) { error in
-            XCTAssertTrue(error is Swift.DecodingError)
+            XCTAssertTrue(error is DecodingError)
         }
 
         let encoder = JSONEncoder()
@@ -54,7 +54,7 @@ final class JsonExtensionsTests: XCTestCase {
         let decoded = try decoder.decode(Example.self, from: validData)
         XCTAssertEqual(decoded.data, Data([0x41, 0x42, 0x43]))
         XCTAssertThrowsError(try decoder.decode(Example.self, from: invalidData)) { error in
-            XCTAssertTrue(error is Swift.DecodingError)
+            XCTAssertTrue(error is DecodingError)
         }
 
         let encoder = JSONEncoder()
@@ -78,7 +78,7 @@ final class JsonExtensionsTests: XCTestCase {
         let decoded = try decoder.decode(Example.self, from: validData)
         XCTAssertEqual(decoded.data, Data([0x41, 0x42, 0x43]))
         XCTAssertThrowsError(try decoder.decode(Example.self, from: invalidData)) { error in
-            XCTAssertTrue(error is Swift.DecodingError)
+            XCTAssertTrue(error is DecodingError)
         }
 
         let encoder = JSONEncoder()

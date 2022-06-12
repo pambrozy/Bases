@@ -11,21 +11,21 @@ import Foundation
 // MARK: Data encoding
 
 extension Data {
-    /// Returns a Base-16 encoded string
+    /// Returns a Base-16 encoded string.
     /// - Parameter alphabet: The alphabet to use to encode the string.
     /// - Returns: The Base-16 encoded string.
     public func base16EncodedString(alphabet: Base16.Alphabet) -> String {
         Base16.Encoder(alphabet: alphabet).encode(self)
     }
 
-    /// Returns a Base-32 encoded string
+    /// Returns a Base-32 encoded string.
     /// - Parameter alphabet: The alphabet to use to encode the string.
     /// - Returns: The Base-32 encoded string.
     public func base32EncodedString(alphabet: Base32.Alphabet) -> String {
         Base32.Encoder(alphabet: alphabet).encode(self)
     }
 
-    /// Returns a Base-85 encoded string
+    /// Returns a Base-85 encoded string.
     /// - Parameter alphabet: The alphabet to use to encode the string.
     /// - Returns: The Base-85 encoded string.
     public func base85EncodedString(alphabet: Base85.Alphabet) -> String {

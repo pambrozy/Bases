@@ -9,6 +9,8 @@
 import Foundation
 
 extension Base32.Alphabet {
+    /// The alphabet defined in [RFC 4648](https://www.rfc-editor.org/rfc/rfc4648.html).
+    /// Contains a `=` padding character.
     public static let rfc4648 = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -35,6 +37,7 @@ extension Base32.Alphabet {
         padding: "="
     )
 
+    /// The z-base-32 alphabet. Does not contain a padding character.
     public static let zBase32 = Self(
         uncheckedCharacters: [
             "y", "b", "n", "d", "r", "f", "g", "8", "e", "j", "k", "m", "c", "p", "q", "x",
@@ -61,6 +64,7 @@ extension Base32.Alphabet {
         padding: nil
     )
 
+    /// The Crockford's Base32 alphabet. Does not contain a padding character.
     public static let crockford = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",
@@ -87,6 +91,8 @@ extension Base32.Alphabet {
         padding: nil
     )
 
+    /// The base32hex alphabet, consisting of digits 0-9 and uppercase letters A-V.
+    /// Contains a `=` padding character.
     public static let base32hex = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",
@@ -113,6 +119,7 @@ extension Base32.Alphabet {
         padding: "="
     )
 
+    /// The Geohash alphabet, used in the Geohash algorithm. Does not contain a padding character.
     public static let geohash = Self(
         uncheckedCharacters: [
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "b", "c", "d", "e", "f", "g",
@@ -139,6 +146,7 @@ extension Base32.Alphabet {
         padding: nil
     )
 
+    /// The word-safe alphabet. Does not contain a padding character.
     public static let wordSafe = Self(
         uncheckedCharacters: [
             "2", "3", "4", "5", "6", "7", "8", "9", "C", "F", "G", "H", "J", "M", "P", "Q",

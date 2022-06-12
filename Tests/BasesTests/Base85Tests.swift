@@ -133,10 +133,10 @@ final class Bases85Tests: XCTestCase {
     func testDecoding() {
         let decoder = Base85.Decoder(alphabet: .ascii)
         XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.nonAsciiCharacters)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
         }
         XCTAssertThrowsError(try decoder.decode("w")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.valuesNotInAlphabet)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
         }
     }
 

@@ -59,10 +59,10 @@ final class Bases32Tests: XCTestCase {
     func testDecoding() {
         let decoder = Base32.Decoder(alphabet: .rfc4648)
         XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.nonAsciiCharacters)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
         }
         XCTAssertThrowsError(try decoder.decode("_")) { error in
-            XCTAssertEqual(error as? DecodingError, DecodingError.valuesNotInAlphabet)
+            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
         }
 
     }
