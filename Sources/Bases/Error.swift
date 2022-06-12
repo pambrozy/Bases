@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Error.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 06/05/2022.
+//  Created by Przemysław Ambroży on 06.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 public enum LineSeparatorError: Error {

@@ -1,5 +1,13 @@
 // swift-tools-version: 5.6
 
+//
+//  Package.swift
+//  Bases
+//
+//  Created by Przemek Ambroży on 12.06.2022.
+//  Copyright © 2022 Przemysław Ambroży
+//
+
 import PackageDescription
 
 let package = Package(
@@ -14,10 +22,6 @@ let package = Package(
         .target(name: "Bases"),
         .testTarget(
             name: "BasesTests",
-            dependencies: ["Bases"]
-        ),
-        .executableTarget(
-            name: "BasesCLI",
             dependencies: ["Bases"]
         )
     ]

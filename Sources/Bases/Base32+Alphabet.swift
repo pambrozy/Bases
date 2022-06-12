@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Base32+Alphabet.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 07/05/2022.
+//  Created by Przemek Ambroży on 07.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation

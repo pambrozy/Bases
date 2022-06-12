@@ -1,5 +1,13 @@
-import XCTest
+//
+//  JsonExtensionsTests.swift
+//  Bases
+//
+//  Created by Przemek Ambroży on 12.06.2022.
+//  Copyright © 2022 Przemysław Ambroży
+//
+
 @testable import Bases
+import XCTest
 
 struct Example: Codable {
     let data: Data
@@ -8,12 +16,6 @@ struct Example: Codable {
 private struct DataCreatingError: Error { }
 
 final class JsonExtensionsTests: XCTestCase {
-
-//    /// A JSON string containing invalid UTF-8 in the data field.
-//    ///
-//    /// The contents of the string: `"{"data":"<INVALID UTF-8>"}`
-//    private var invalidUTF8 = Data([0x7B, 0x22, 0x64, 0x61, 0x74, 0x61, 0x22, 0x3A, 0x22,  0xC3, 0x28, 0x22, 0x7D])
-
     func testBase16() throws {
         guard let validData = #"{"data":"414243"}"#.data(using: .utf8) else {
             throw DataCreatingError()

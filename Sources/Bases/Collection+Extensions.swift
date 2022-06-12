@@ -1,15 +1,15 @@
 //
-//  File.swift
-//  
+//  Collection+Extensions.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 26/05/2022.
+//  Created by Przemek Ambroży on 26.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
 
 extension Collection {
-    // TODO: Make `internal`
-    public func chunks(ofCount count: Int) -> [SubSequence] {
+    func chunks(ofCount count: Int) -> [SubSequence] {
         var startIndex = self.startIndex
         var result = [SubSequence]()
         result.reserveCapacity(self.count / count)

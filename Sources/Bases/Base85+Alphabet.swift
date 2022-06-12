@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Base85+Alphabet.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 10/05/2022.
+//  Created by Przemek Ambroży on 10.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
@@ -40,7 +41,6 @@ extension Base85.Alphabet {
         fourZeros: nil,
         fourSpaces: nil
     )
-
 
     /// The alphabet similar to btoa, but without the prefix or suffix.
     public static let btoaLike = Self(
@@ -156,7 +156,7 @@ extension Base85.Alphabet {
             "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
             "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ".", "-",
             ":", "+", "=", "^", "!", "/", "*", "?", "&", "<", ">", "(", ")", "[", "]", "{",
-            "}", "@", "%", "$", "#",
+            "}", "@", "%", "$", "#"
         ],
         uncheckedValues: [
             nil, nil, nil, nil, nil, nil, nil, nil,
@@ -174,7 +174,7 @@ extension Base85.Alphabet {
             nil, 10, 11, 12, 13, 14, 15, 16,
             17, 18, 19, 20, 21, 22, 23, 24,
             25, 26, 27, 28, 29, 30, 31, 32,
-            33, 34, 35, 79, nil, 80, nil, nil,
+            33, 34, 35, 79, nil, 80, nil, nil
         ],
         startDelimeter: nil,
         endDelimeter: nil,

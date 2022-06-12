@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  LineSeparator.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 08/05/2022.
+//  Created by Przemek Ambroży on 08.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation

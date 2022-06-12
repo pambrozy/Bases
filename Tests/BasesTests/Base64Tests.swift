@@ -1,5 +1,13 @@
-import XCTest
+//
+//  Base64Tests.swift
+//  Bases
+//
+//  Created by Przemek Ambroży on 12.06.2022.
+//  Copyright © 2022 Przemysław Ambroży
+//
+
 @testable import Bases
+import XCTest
 
 final class Bases64Tests: XCTestCase {
     func testStandard() throws {

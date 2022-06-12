@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Base64.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 08/05/2022.
+//  Created by Przemek Ambroży on 08.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
@@ -160,7 +161,7 @@ public enum Base64 {
                         }
                         return value
                     }
-                
+
                 data += [
                     // [0](__111111) + [1](__110000)
                     (characters[0] << 2) | (characters[1] >> 4),
@@ -179,4 +180,3 @@ public enum Base64 {
         }
     }
 }
-

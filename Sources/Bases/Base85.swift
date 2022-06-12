@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Base85.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 08/05/2022.
+//  Created by Przemek Ambroży on 08.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
@@ -98,33 +99,12 @@ public enum Base85 {
                         alphabet.characters[Int((number / 614_125) % 85)],
                         alphabet.characters[Int((number / 7_225) % 85)],
                         alphabet.characters[Int((number / 85) % 85)],
-                        alphabet.characters[Int(number % 85)],
+                        alphabet.characters[Int(number % 85)]
                     ]
                 }
                 .dropLast(padCharacterCount)
                 .chunks(ofCount: 5)
-                .flatMap { chunk -> [Character] in
-                    if chunk.count == 5 {
-                        if chunk[chunk.startIndex] == alphabet.characters[0],
-                           chunk[chunk.startIndex + 1] == alphabet.characters[0],
-                           chunk[chunk.startIndex + 2] == alphabet.characters[0],
-                           chunk[chunk.startIndex + 3] == alphabet.characters[0],
-                           chunk[chunk.startIndex + 4] == alphabet.characters[0],
-                           let zeroCharacter = alphabet.fourZeros {
-                            // Replace zeros
-                            return [zeroCharacter]
-                        } else if chunk[chunk.startIndex] == alphabet.characters[10],
-                                  chunk[chunk.startIndex + 1] == alphabet.characters[27],
-                                  chunk[chunk.startIndex + 2] == alphabet.characters[53],
-                                  chunk[chunk.startIndex + 3] == alphabet.characters[67],
-                                  chunk[chunk.startIndex + 4] == alphabet.characters[43],
-                                  let spaceCharacter = alphabet.fourSpaces {
-                            // Replace spaces
-                            return [spaceCharacter]
-                        }
-                    }
-                    return Array(chunk)
-                }
+                .flatMap(addZerosSpacesCharacters(in:))
 
             // Result cannot end with zeros
             if let zeroCharacter = alphabet.fourZeros, output.last == zeroCharacter {
@@ -141,6 +121,29 @@ public enum Base85 {
             }
 
             return String(output)
+        }
+
+        private func addZerosSpacesCharacters(in chunk: ArraySlice<Character>) -> [Character] {
+            if chunk.count == 5 {
+                if chunk[chunk.startIndex] == alphabet.characters[0],
+                   chunk[chunk.startIndex + 1] == alphabet.characters[0],
+                   chunk[chunk.startIndex + 2] == alphabet.characters[0],
+                   chunk[chunk.startIndex + 3] == alphabet.characters[0],
+                   chunk[chunk.startIndex + 4] == alphabet.characters[0],
+                   let zeroCharacter = alphabet.fourZeros {
+                    // Replace zeros
+                    return [zeroCharacter]
+                } else if chunk[chunk.startIndex] == alphabet.characters[10],
+                          chunk[chunk.startIndex + 1] == alphabet.characters[27],
+                          chunk[chunk.startIndex + 2] == alphabet.characters[53],
+                          chunk[chunk.startIndex + 3] == alphabet.characters[67],
+                          chunk[chunk.startIndex + 4] == alphabet.characters[43],
+                          let spaceCharacter = alphabet.fourSpaces {
+                    // Replace spaces
+                    return [spaceCharacter]
+                }
+            }
+            return Array(chunk)
         }
     }
 
@@ -167,39 +170,11 @@ public enum Base85 {
                 text.removeLast(endDelimeter.count)
             }
 
-            // TODO: Remove whitespace
-
             // Replace four zeros
-            if let zerosCharacter = alphabet.fourZeros {
-                text = text.replacingOccurrences(
-                    of: String(zerosCharacter),
-                    with: String(
-                        [
-                            alphabet.characters[0],
-                            alphabet.characters[0],
-                            alphabet.characters[0],
-                            alphabet.characters[0],
-                            alphabet.characters[0]
-                        ]
-                    )
-                )
-            }
+            replaceFourZeros(in: &text)
 
             // Replace four spaces
-            if let spaceCharacter = alphabet.fourSpaces {
-                text = text.replacingOccurrences(
-                    of: String(spaceCharacter),
-                    with: String(
-                        [
-                            alphabet.characters[10],
-                            alphabet.characters[27],
-                            alphabet.characters[53],
-                            alphabet.characters[67],
-                            alphabet.characters[43]
-                        ]
-                    )
-                )
-            }
+            replaceFourSpaces(in: &text)
 
             // Calculate pad characters
             let padCharacterCount = text.count.isMultiple(of: 5) ? 0 : 5 - (text.count % 5)
@@ -218,7 +193,6 @@ public enum Base85 {
                 }
                 .chunks(ofCount: 5)
                 .flatMap { chunk -> [UInt8] in
-                    print("CHUNK IS", chunk)
                     let number: UInt32 =
                         (UInt32(chunk[chunk.startIndex]) * 52_200_625) +
                         (UInt32(chunk[chunk.startIndex + 1]) * 614_125) +
@@ -240,298 +214,41 @@ public enum Base85 {
 
             return Data(data)
         }
+
+        private func replaceFourZeros(in text: inout String) {
+            guard let zerosCharacter = alphabet.fourZeros else {
+                return
+            }
+            text = text.replacingOccurrences(
+                of: String(zerosCharacter),
+                with: String(
+                    [
+                        alphabet.characters[0],
+                        alphabet.characters[0],
+                        alphabet.characters[0],
+                        alphabet.characters[0],
+                        alphabet.characters[0]
+                    ]
+                )
+            )
+        }
+
+        private func replaceFourSpaces(in text: inout String) {
+            guard let spaceCharacter = alphabet.fourSpaces else {
+                return
+            }
+            text = text.replacingOccurrences(
+                of: String(spaceCharacter),
+                with: String(
+                    [
+                        alphabet.characters[10],
+                        alphabet.characters[27],
+                        alphabet.characters[53],
+                        alphabet.characters[67],
+                        alphabet.characters[43]
+                    ]
+                )
+            )
+        }
     }
 }
-
-
-extension Base85.Alphabet {
-    public static let zeromq = try! Self(
-        characters: [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "f",
-            "g",
-            "h",
-            "i",
-            "j",
-            "k",
-            "l",
-            "m",
-            "n",
-            "o",
-            "p",
-            "q",
-            "r",
-            "s",
-            "t",
-            "u",
-            "v",
-            "w",
-            "x",
-            "y",
-            "z",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-            ".",
-            "-",
-            ":",
-            "+",
-            "=",
-            "^",
-            "!",
-            "/",
-            "*",
-            "?",
-            "&",
-            "<",
-            ">",
-            "(",
-            ")",
-            "[",
-            "]",
-            "{",
-            "}",
-            "@",
-            "%",
-            "$",
-            "#"
-        ],
-        startDelimeter: nil,
-        endDelimeter: nil,
-        fourZeros: nil,
-        fourSpaces: nil
-    )
-}
-
-
-/*
-"!",
-""",
-"#",
-"$",
-"%",
-"&",
-"'",
-"(",
-")",
-"*",
-"+",
-",",
-"-",
-".",
-"/",
-"0",
-"1",
-"2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9",
-":",
-";",
-"<",
-"=",
-">",
-"?",
-"@",
-"A",
-"B",
-"C",
-"D",
-"E",
-"F",
-"G",
-"H",
-"I",
-"J",
-"K",
-"L",
-"M",
-"N",
-"O",
-"P",
-"Q",
-"R",
-"S",
-"T",
-"U",
-"V",
-"W",
-"X",
-"Y",
-"Z",
-"[",
-"\",
-"]",
-"^",
-"_",
-"`",
-"a",
-"b",
-"c",
-"d",
-"e",
-"f",
-"g",
-"h",
-"i",
-"j",
-"k",
-"l",
-"m",
-"n",
-"o",
-"p",
-"q",
-"r",
-"s",
-"t",
-"u",
-"v",
-"w",
-"x",
-"y",
-"z",
-"{",
-"|",
-"}",
-"~",
-
-
-ZeroMQ
-"0",
-"1",
-"2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9",
-"a",
-"b",
-"c",
-"d",
-"e",
-"f",
-"g",
-"h",
-"i",
-"j",
-"k",
-"l",
-"m",
-"n",
-"o",
-"p",
-"q",
-"r",
-"s",
-"t",
-"u",
-"v",
-"w",
-"x",
-"y",
-"z",
-"A",
-"B",
-"C",
-"D",
-"E",
-"F",
-"G",
-"H",
-"I",
-"J",
-"K",
-"L",
-"M",
-"N",
-"O",
-"P",
-"Q",
-"R",
-"S",
-"T",
-"U",
-"V",
-"W",
-"X",
-"Y",
-"Z",
-".",
-"-",
-":",
-"+",
-"=",
-"^",
-"!",
-"/",
-"*",
-"?",
-"&",
-"<",
-">",
-"(",
-")",
-"[",
-"]",
-"{",
-"}",
-"@",
-"%",
-"$",
-"#"
-
-
-
-
-
-
-
-
-
-
- */

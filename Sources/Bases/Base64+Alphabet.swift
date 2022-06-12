@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Base64+Alphabet.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 08/05/2022.
+//  Created by Przemek Ambroży on 08.05.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
@@ -157,7 +158,6 @@ extension Base64.Alphabet {
         padding: "=",
         lineSeparator: LineSeparator(separator: "\r\n", uncheckedLength: 76)
     )
-
 
     /// Returns the Base64 transfer encoding for MIME alphabet with a specified maximum line length.
     /// - Parameter lineLength: The maximum line length (must be positive).

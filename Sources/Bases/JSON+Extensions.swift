@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  JSON+Extensions.swift
+//  Bases
 //
-//  Created by Przemek Ambroży on 12/06/2022.
+//  Created by Przemek Ambroży on 12.06.2022.
+//  Copyright © 2022 Przemysław Ambroży
 //
 
 import Foundation
