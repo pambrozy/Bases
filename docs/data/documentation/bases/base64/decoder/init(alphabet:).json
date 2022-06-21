@@ -1,0 +1,331 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates a new decoder.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Base64",
+        "doc:\/\/Bases\/documentation\/Bases\/Base64\/Decoder"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Decoder\/init(alphabet:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases6Base64O7DecoderV8alphabetAeC8AlphabetV_tcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base64O",
+        "text" : "Base64"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+        "text" : "Alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(alphabet:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base64O",
+              "text" : "Base64"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+              "text" : "Alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The alphabet to use when decoding data.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "alphabet"
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/base64\/decoder\/init(alphabet:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base64": {
+  "abstract" : [
+    {
+      "text" : "The Base-64 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base64"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base64"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base64",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet definig a set of characters used for the Base-64 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base64.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet"
+},
+"doc://Bases/documentation/Bases/Base64/Decoder": {
+  "abstract" : [
+    {
+      "text" : "The Base-64 Decoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Decoder"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Decoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Decoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base64.Decoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/decoder"
+},
+"doc://Bases/documentation/Bases/Base64/Decoder/init(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new decoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Decoder\/init(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/decoder\/init(alphabet:)"
+}
+}
+}

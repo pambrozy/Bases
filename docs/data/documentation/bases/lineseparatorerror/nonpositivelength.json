@@ -1,0 +1,175 @@
+{
+  "abstract" : [
+    {
+      "text" : "The length of the string is less than of equal to zero.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError\/nonPositiveLength"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases18LineSeparatorErrorO17nonPositiveLengthyA2CmF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "nonPositiveLength"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "LineSeparatorError.nonPositiveLength"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "nonPositiveLength"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/lineseparatorerror\/nonpositivelength"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/LineSeparatorError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when creating a line separator.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LineSeparatorError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/lineseparatorerror"
+},
+"doc://Bases/documentation/Bases/LineSeparatorError/nonPositiveLength": {
+  "abstract" : [
+    {
+      "text" : "The length of the string is less than of equal to zero.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nonPositiveLength"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError\/nonPositiveLength",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "LineSeparatorError.nonPositiveLength",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/lineseparatorerror\/nonpositivelength"
+}
+}
+}

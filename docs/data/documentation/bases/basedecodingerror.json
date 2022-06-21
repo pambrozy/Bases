@@ -1,0 +1,387 @@
+{
+  "abstract" : [
+    {
+      "text" : "An error that may occur when decoding the string.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases17BaseDecodingErrorO",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "enum"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "BaseDecodingError"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "BaseDecodingError"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Enumeration",
+    "symbolKind" : "enum",
+    "title" : "BaseDecodingError"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "enum"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "BaseDecodingError"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/SQ",
+        "doc:\/\/Bases\/s5ErrorP",
+        "doc:\/\/Bases\/SH",
+        "doc:\/\/Bases\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
+        "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError"
+      ],
+      "title" : "Errors"
+    }
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/nonAsciiCharacters",
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/valuesNotInAlphabet",
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/wrongNumberOfBytes"
+      ],
+      "title" : "Enumeration Cases"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/Equatable-Implementations",
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/Error-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/basedecodingerror"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/SH": {
+  "identifier" : "doc:\/\/Bases\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://Bases/SQ": {
+  "identifier" : "doc:\/\/Bases\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/AlphabetError": {
+  "abstract" : [
+    {
+      "text" : "An error that might occur when creating an alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlphabetError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/alphabeterror"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when decoding the string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BaseDecodingError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/equatable-implementations"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/Error-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/Error-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Error Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/error-implementations"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/nonAsciiCharacters": {
+  "abstract" : [
+    {
+      "text" : "The string to decode contains non-ASCII values.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nonAsciiCharacters"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/nonAsciiCharacters",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BaseDecodingError.nonAsciiCharacters",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/nonasciicharacters"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/valuesNotInAlphabet": {
+  "abstract" : [
+    {
+      "text" : "The given string contains characters not found in the alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "valuesNotInAlphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/valuesNotInAlphabet",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BaseDecodingError.valuesNotInAlphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/valuesnotinalphabet"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/wrongNumberOfBytes": {
+  "abstract" : [
+    {
+      "text" : "The length of the provided string is invalid.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wrongNumberOfBytes"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/wrongNumberOfBytes",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BaseDecodingError.wrongNumberOfBytes",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/wrongnumberofbytes"
+},
+"doc://Bases/documentation/Bases/LineSeparatorError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when creating a line separator.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LineSeparatorError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/lineseparatorerror"
+},
+"doc://Bases/s5ErrorP": {
+  "identifier" : "doc:\/\/Bases\/s5ErrorP",
+  "title" : "Swift.Error",
+  "type" : "unresolvable"
+},
+"doc://Bases/s8SendableP": {
+  "identifier" : "doc:\/\/Bases\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

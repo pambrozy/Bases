@@ -1,0 +1,658 @@
+{
+  "abstract" : [
+    {
+      "text" : "Learn how to use the encoders and decoders included in this package.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Usage"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Usage"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Encoding-data",
+          "level" : 2,
+          "text" : "Encoding data",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To encode data, firstly create an encoder, providing an alphabet",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to the initializer ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Encoder\/init(alphabet:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let encoder = Base32.Encoder(alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Then use the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Encoder\/encode(_:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " method:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let encodedString = encoder.encode(dataToEncode)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Alternatively, you can use the ",
+              "type" : "text"
+            },
+            {
+              "code" : "base32EncodedString(alphabet:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let encodedString = dataToEncode.base32EncodedString(alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Decoding-data",
+          "level" : 2,
+          "text" : "Decoding data",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To decode data, start by creating a decoder, providing an alphabet",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "to the initializer ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Decoder\/init(alphabet:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let decoder = Base32.Decoder(alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The use the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Decoder\/decode(_:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " method:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "do {",
+            "    let decodedData = try decoder.decode(stringToDecode)",
+            "} catch {",
+            "    print(\"Cannot decode: \\(error.localizedDescription)\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Alternatively, use one of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Data",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " initializers:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let decodedFromString = Data(base32Encoded: stringToDecode, alphabet: .rfc4648)",
+            "",
+            "let decodedFromData = Data(base32Encoded: dataToDecode, alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Using-with-JSONEncoder-and-JSONDecoder",
+          "level" : 2,
+          "text" : "Using with JSONEncoder and JSONDecoder",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can use the encoders and decoders from this package in ",
+              "type" : "text"
+            },
+            {
+              "code" : "JSONEncoder",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "JSONDecoder",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "In the next few examples we will use the example ",
+              "type" : "text"
+            },
+            {
+              "code" : "Codable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " struct:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct Example: Codable {",
+            "    let data: Data",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Let’s create an instance of this struct:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let example = Example(data: Data([65, 66, 67]))"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Encoding",
+          "level" : 3,
+          "text" : "Encoding",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To encode the struct, create an instance of JSONEncoder and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "set its ",
+              "type" : "text"
+            },
+            {
+              "code" : "dataEncodingStrategy",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to an appropriate encoder:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let encoder = JSONEncoder()",
+            "encoder.dataEncodingStrategy = .base32(alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Then encode the data:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "do {",
+            "    let encoded = try encoder.encode(decoded)",
+            "    print(String(decoding: encoded, as: UTF8.self))",
+            "    \/\/ Prints: {\"data\":\"IFBEG===\"}",
+            "} catch {",
+            "    print(\"Cannot encode: \\(error.localizedDescription)\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Decoding",
+          "level" : 3,
+          "text" : "Decoding",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To decode a JSON string, create an instance of JSONDecoder and",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "set its ",
+              "type" : "text"
+            },
+            {
+              "code" : "dataDecodingStrategy",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to an appropriate decoder:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let decoder = JSONDecoder()",
+            "decoder.dataDecodingStrategy = .base32(alphabet: .rfc4648)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Then decode the data:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "do {",
+            "    let decoded = try decoder.decode(Example.self, from: validData)",
+            "    print(Array(decoded.data))",
+            "    \/\/ Prints: [65, 66, 67]",
+            "} catch {",
+            "    print(\"Cannot decode: \\(error.localizedDescription)\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/usage"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base32/Decoder/decode(_:)": {
+  "abstract" : [
+    {
+      "text" : "Decodes a given string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "decode"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Decoder\/decode(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "decode(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/decoder\/decode(_:)"
+},
+"doc://Bases/documentation/Bases/Base32/Decoder/init(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new decoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Decoder\/init(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/decoder\/init(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Base32/Encoder/encode(_:)": {
+  "abstract" : [
+    {
+      "text" : "Encodes the given data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "encode"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Encoder\/encode(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "encode(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/encoder\/encode(_:)"
+},
+"doc://Bases/documentation/Bases/Base32/Encoder/init(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new encoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Encoder\/init(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/encoder\/init(alphabet:)"
+}
+}
+}

@@ -1,0 +1,955 @@
+{
+  "abstract" : [
+    {
+      "text" : "An alphabet definig a set of characters used for the Base-85 encoding.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases6Base85O8AlphabetV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Alphabet"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Alphabet"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "Base85.Alphabet"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Alphabet"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/SQ"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/ascii",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/btoaLike",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/adobeAscii85",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/rfc1924Like",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/z85"
+      ],
+      "title" : "Built-in Alphabets"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/init(characters:startDelimeter:endDelimeter:fourZeros:fourSpaces:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/characters",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/endDelimeter",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/fourSpaces",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/fourZeros",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/startDelimeter",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/values"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/base85\/alphabet"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/SQ": {
+  "identifier" : "doc:\/\/Bases\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base85": {
+  "abstract" : [
+    {
+      "text" : "The Base-85 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base85"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base85"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet definig a set of characters used for the Base-85 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base85.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/equatable-implementations"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/adobeAscii85": {
+  "abstract" : [
+    {
+      "text" : "The Adobe Acii85 alphabet.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Uses ",
+      "type" : "text"
+    },
+    {
+      "code" : "<~",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as start delimeter and ",
+      "type" : "text"
+    },
+    {
+      "code" : "~>",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as end delimeter.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "adobeAscii85"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/adobeAscii85",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "adobeAscii85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/adobeascii85"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/ascii": {
+  "abstract" : [
+    {
+      "text" : "The alphabet consisting of the ASCII characters ",
+      "type" : "text"
+    },
+    {
+      "code" : "!",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " through ",
+      "type" : "text"
+    },
+    {
+      "code" : "u",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ascii"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/ascii",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ascii",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/ascii"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/btoaLike": {
+  "abstract" : [
+    {
+      "text" : "The alphabet similar to btoa, but without the prefix or suffix.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "btoaLike"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/btoaLike",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "btoaLike",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/btoalike"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/characters": {
+  "abstract" : [
+    {
+      "text" : "The ordered array mapping the 85 values to ASCII character codes.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "characters"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/characters",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "characters",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/characters"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/endDelimeter": {
+  "abstract" : [
+    {
+      "text" : "The delimeter at the end of the encoded data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "endDelimeter"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/endDelimeter",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "endDelimeter",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/enddelimeter"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/fourSpaces": {
+  "abstract" : [
+    {
+      "text" : "An optional character representing data consisting of four spaces.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fourSpaces"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/fourSpaces",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fourSpaces",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/fourspaces"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/fourZeros": {
+  "abstract" : [
+    {
+      "text" : "An optional character representing data consisting of four ",
+      "type" : "text"
+    },
+    {
+      "code" : "0",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " bytes.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fourZeros"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/fourZeros",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fourZeros",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/fourzeros"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/init(characters:startDelimeter:endDelimeter:fourZeros:fourSpaces:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "characters"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "startDelimeter"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "endDelimeter"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "fourZeros"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "fourSpaces"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SJ",
+      "text" : "Character"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/init(characters:startDelimeter:endDelimeter:fourZeros:fourSpaces:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(characters:startDelimeter:endDelimeter:fourZeros:fourSpaces:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/init(characters:startdelimeter:enddelimeter:fourzeros:fourspaces:)"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/rfc1924Like": {
+  "abstract" : [
+    {
+      "text" : "The alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "The way the encoder in this package works differs from the scheme defined in the RFC 1924.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rfc1924Like"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/rfc1924Like",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rfc1924Like",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/rfc1924like"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/startDelimeter": {
+  "abstract" : [
+    {
+      "text" : "The delimeter at the beginning of the encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "startDelimeter"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/startDelimeter",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "startDelimeter",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/startdelimeter"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/values": {
+  "abstract" : [
+    {
+      "text" : "The ordered array mapping the 128 ASCII character codes to values.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "values"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s5UInt8V",
+      "text" : "UInt8"
+    },
+    {
+      "kind" : "text",
+      "text" : "?]"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/values",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "values",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/values"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/z85": {
+  "abstract" : [
+    {
+      "text" : "The Z85 ZeroMQ alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "z85"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/z85",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "z85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/z85"
+},
+"https://datatracker.ietf.org/doc/html/rfc1924": {
+  "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924",
+  "title" : "RFC 1924",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 1924",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924"
+}
+}
+}

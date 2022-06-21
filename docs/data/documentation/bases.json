@@ -1,0 +1,467 @@
+{
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "Bases",
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Framework",
+    "symbolKind" : "module",
+    "title" : "Bases"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "This package contains a collection of built-in alphabets for every encoding.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For details, see the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " article.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For instructions on how to use encoders and decoders included in this package,",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "see the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Usage",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " article.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base16",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32",
+        "doc:\/\/Bases\/documentation\/Bases\/Base64",
+        "doc:\/\/Bases\/documentation\/Bases\/Base85"
+      ],
+      "title" : "Encodings"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/LineSeparator"
+      ],
+      "title" : "Line Separator"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
+        "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
+        "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError"
+      ],
+      "title" : "Errors"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Usage",
+        "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets"
+      ],
+      "title" : "Articles"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/AlphabetError": {
+  "abstract" : [
+    {
+      "text" : "An error that might occur when creating an alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlphabetError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/alphabeterror"
+},
+"doc://Bases/documentation/Bases/Base16": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16"
+},
+"doc://Bases/documentation/Bases/Base32": {
+  "abstract" : [
+    {
+      "text" : "The Base-32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base32",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32"
+},
+"doc://Bases/documentation/Bases/Base64": {
+  "abstract" : [
+    {
+      "text" : "The Base-64 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base64"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base64"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base64",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64"
+},
+"doc://Bases/documentation/Bases/Base85": {
+  "abstract" : [
+    {
+      "text" : "The Base-85 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base85"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base85"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when decoding the string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BaseDecodingError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror"
+},
+"doc://Bases/documentation/Bases/Built-In-Alphabets": {
+  "abstract" : [
+    {
+      "text" : "See the list of alphabets provided with this package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Built-In Alphabets",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/built-in-alphabets"
+},
+"doc://Bases/documentation/Bases/LineSeparator": {
+  "abstract" : [
+    {
+      "text" : "A struct representing the line separator.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparator"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparator",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparator"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LineSeparator",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/lineseparator"
+},
+"doc://Bases/documentation/Bases/LineSeparatorError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when creating a line separator.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LineSeparatorError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LineSeparatorError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/lineseparatorerror"
+},
+"doc://Bases/documentation/Bases/Usage": {
+  "abstract" : [
+    {
+      "text" : "Learn how to use the encoders and decoders included in this package.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Usage",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Usage",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/usage"
+}
+}
+}

@@ -1,0 +1,331 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates a new encoder.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Base16",
+        "doc:\/\/Bases\/documentation\/Bases\/Base16\/Encoder"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Encoder\/init(alphabet:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases6Base16O7EncoderV8alphabetAeC8AlphabetV_tcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base16O",
+        "text" : "Base16"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+        "text" : "Alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(alphabet:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base16O",
+              "text" : "Base16"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+              "text" : "Alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : " = .uppercase)"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The alphabet to use when encoding data.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "alphabet"
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/base16\/encoder\/init(alphabet:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base16": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16"
+},
+"doc://Bases/documentation/Bases/Base16/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet definig a set of characters used for the Base-16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/alphabet"
+},
+"doc://Bases/documentation/Bases/Base16/Encoder": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 Encoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Encoder"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Encoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Encoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16.Encoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/encoder"
+},
+"doc://Bases/documentation/Bases/Base16/Encoder/init(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new encoder.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Encoder\/init(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/encoder\/init(alphabet:)"
+}
+}
+}

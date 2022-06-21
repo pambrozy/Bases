@@ -1,0 +1,175 @@
+{
+  "abstract" : [
+    {
+      "text" : "The array with characters contains a non-ASCII character.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/AlphabetError"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/AlphabetError\/noAsciiValue"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases13AlphabetErrorO12noAsciiValueyA2CmF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "noAsciiValue"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "AlphabetError.noAsciiValue"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "noAsciiValue"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/alphabeterror\/noasciivalue"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/AlphabetError": {
+  "abstract" : [
+    {
+      "text" : "An error that might occur when creating an alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlphabetError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlphabetError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/alphabeterror"
+},
+"doc://Bases/documentation/Bases/AlphabetError/noAsciiValue": {
+  "abstract" : [
+    {
+      "text" : "The array with characters contains a non-ASCII character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "noAsciiValue"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/AlphabetError\/noAsciiValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "AlphabetError.noAsciiValue",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/alphabeterror\/noasciivalue"
+}
+}
+}

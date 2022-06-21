@@ -1,0 +1,652 @@
+{
+  "abstract" : [
+    {
+      "text" : "The alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Contains a ",
+      "type" : "text"
+    },
+    {
+      "code" : "=",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " padding character.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/rfc4648"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Bases",
+    "externalID" : "s:5Bases6Base32O8AlphabetV7rfc4648AEvpZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "let"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "rfc4648"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base32O",
+        "text" : "Base32"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+        "text" : "Alphabet"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Property",
+    "symbolKind" : "property",
+    "title" : "rfc4648"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "let"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "rfc4648"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base32O",
+              "text" : "Base32"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+              "text" : "Alphabet"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/zBase32",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/crockford",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/base32hex",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/geohash",
+        "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/wordSafe"
+      ],
+      "title" : "Built-in Alphabets"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/base32\/alphabet\/rfc4648"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base32": {
+  "abstract" : [
+    {
+      "text" : "The Base-32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base32",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet definig a set of characters used for the Base-32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base32.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/base32hex": {
+  "abstract" : [
+    {
+      "text" : "The base32hex alphabet, consisting of digits 0-9 and uppercase letters A-V.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Contains a ",
+      "type" : "text"
+    },
+    {
+      "code" : "=",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base32hex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/base32hex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base32hex",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/base32hex"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/crockford": {
+  "abstract" : [
+    {
+      "text" : "The Crockford’s Base32 alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "crockford"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/crockford",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "crockford",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/crockford"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/geohash": {
+  "abstract" : [
+    {
+      "text" : "The Geohash alphabet, used in the Geohash algorithm. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "geohash"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/geohash",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "geohash",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/geohash"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/rfc4648": {
+  "abstract" : [
+    {
+      "text" : "The alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Contains a ",
+      "type" : "text"
+    },
+    {
+      "code" : "=",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rfc4648"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/rfc4648",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rfc4648",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/rfc4648"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/wordSafe": {
+  "abstract" : [
+    {
+      "text" : "The word-safe alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wordSafe"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/wordSafe",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "wordSafe",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/wordsafe"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/zBase32": {
+  "abstract" : [
+    {
+      "text" : "The z-base-32 alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "zBase32"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/zBase32",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "zBase32",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/zbase32"
+},
+"https://www.rfc-editor.org/rfc/rfc4648.html": {
+  "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+  "title" : "RFC 4648",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 4648",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html"
+}
+}
+}

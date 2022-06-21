@@ -1,0 +1,175 @@
+{
+  "abstract" : [
+    {
+      "text" : "The length of the provided string is invalid.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/wrongNumberOfBytes"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:5Bases17BaseDecodingErrorO18wrongNumberOfBytesyA2CmF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "case"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "wrongNumberOfBytes"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Case",
+    "symbolKind" : "case",
+    "title" : "BaseDecodingError.wrongNumberOfBytes"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "case"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "wrongNumberOfBytes"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/basedecodingerror\/wrongnumberofbytes"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError": {
+  "abstract" : [
+    {
+      "text" : "An error that may occur when decoding the string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BaseDecodingError"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BaseDecodingError",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror"
+},
+"doc://Bases/documentation/Bases/BaseDecodingError/wrongNumberOfBytes": {
+  "abstract" : [
+    {
+      "text" : "The length of the provided string is invalid.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wrongNumberOfBytes"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/wrongNumberOfBytes",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "BaseDecodingError.wrongNumberOfBytes",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/basedecodingerror\/wrongnumberofbytes"
+}
+}
+}

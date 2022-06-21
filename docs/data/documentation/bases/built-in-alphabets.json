@@ -1,0 +1,2586 @@
+{
+  "abstract" : [
+    {
+      "text" : "See the list of alphabets provided with this package.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "article",
+    "roleHeading" : "Article",
+    "title" : "Built-In Alphabets"
+  },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Base16",
+          "level" : 2,
+          "text" : "Base16",
+          "type" : "heading"
+        },
+        {
+          "header" : "row",
+          "rows" : [
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Alphabet",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Characters",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet\/lowercase",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "f",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet\/uppercase",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "F",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ]
+          ],
+          "type" : "table"
+        },
+        {
+          "anchor" : "Base32",
+          "level" : 2,
+          "text" : "Base32",
+          "type" : "heading"
+        },
+        {
+          "header" : "row",
+          "rows" : [
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Alphabet",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Characters",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Padding",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/rfc4648",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "7",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "=",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/zBase32",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "y",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "9",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/crockford",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "Z",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/base32hex",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "V",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "=",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/geohash",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "z",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/wordSafe",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "2",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "x",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ]
+          ],
+          "type" : "table"
+        },
+        {
+          "anchor" : "Base64",
+          "level" : 2,
+          "text" : "Base64",
+          "type" : "heading"
+        },
+        {
+          "header" : "row",
+          "rows" : [
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Alphabet",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Characters",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Padding",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Line spacing",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/standard",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " -  ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "\/",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "=",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/base64url",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "_",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "=",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/utf7",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "\/",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/imapMailboxNames",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : ",",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/mime",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "A",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "\/",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "=",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "\\r\\n",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " every 76 characters",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ]
+          ],
+          "type" : "table"
+        },
+        {
+          "anchor" : "Base85",
+          "level" : 2,
+          "text" : "Base85",
+          "type" : "heading"
+        },
+        {
+          "header" : "row",
+          "rows" : [
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Alphabet",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Characters",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Start delimeter",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "End delimeter",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Four zeros",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "Four spaces",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/ascii",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "!",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "u",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/btoaLike",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "!",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "u",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "z",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "y",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/adobeAscii85",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "!",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "u",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "<~",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "~>",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "z",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/rfc1924Like",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "~",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/z85",
+                      "isActive" : true,
+                      "type" : "reference"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "code" : "0",
+                      "type" : "codeVoice"
+                    },
+                    {
+                      "text" : " - ",
+                      "type" : "text"
+                    },
+                    {
+                      "code" : "#",
+                      "type" : "codeVoice"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ],
+              [
+                {
+                  "inlineContent" : [
+                    {
+                      "text" : "none",
+                      "type" : "text"
+                    }
+                  ],
+                  "type" : "paragraph"
+                }
+              ]
+            ]
+          ],
+          "type" : "table"
+        },
+        {
+          "anchor" : "More-info",
+          "level" : 3,
+          "text" : "More info",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "To see how every alphabet is defined, check the tests.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "For example, the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/crockford",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " alphabet is defined",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "testBuiltInCrockfordAlphabet",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " method in the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Bases32Tests",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " class:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let crockford = try Base32.Alphabet(",
+            "    characters: [",
+            "        [\"0\", \"o\", \"O\"],",
+            "        [\"1\", \"i\", \"I\", \"l\", \"L\"],",
+            "        [\"2\", \"2\"],",
+            "        [\"3\", \"3\"],",
+            "        [\"4\", \"4\"],",
+            "        [\"5\", \"5\"],",
+            "        [\"6\", \"6\"],",
+            "        [\"7\", \"7\"],",
+            "        [\"8\", \"8\"], [\"9\", \"9\"], [\"A\", \"a\"], [\"B\", \"b\"],",
+            "        [\"C\", \"c\"], [\"D\", \"d\"], [\"E\", \"e\"], [\"F\", \"f\"],",
+            "        [\"G\", \"g\"], [\"H\", \"h\"], [\"J\", \"j\"], [\"K\", \"k\"],",
+            "        [\"M\", \"m\"], [\"N\", \"n\"], [\"P\", \"p\"], [\"Q\", \"q\"],",
+            "        [\"R\", \"r\"], [\"S\", \"s\"], [\"T\", \"t\"], [\"V\", \"v\"],",
+            "        [\"W\", \"w\"], [\"X\", \"x\"], [\"Y\", \"y\"], [\"Z\", \"z\"]",
+            "    ],",
+            "    padding: nil",
+            ")"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "It is able to decode any of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "o",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "O",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " characters as a value of zero.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 2,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/built-in-alphabets"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base16/Alphabet/lowercase": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 lowercase alphabet, consisting of digits 0-9 and lowercase letters a-f.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "lowercase"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet\/lowercase",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "lowercase",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/alphabet\/lowercase"
+},
+"doc://Bases/documentation/Bases/Base16/Alphabet/uppercase": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 uppercase alphabet, consisting of digits 0-9 and uppercase letters A-F.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "uppercase"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet\/uppercase",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "uppercase",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/alphabet\/uppercase"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/base32hex": {
+  "abstract" : [
+    {
+      "text" : "The base32hex alphabet, consisting of digits 0-9 and uppercase letters A-V.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Contains a ",
+      "type" : "text"
+    },
+    {
+      "code" : "=",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base32hex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/base32hex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base32hex",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/base32hex"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/crockford": {
+  "abstract" : [
+    {
+      "text" : "The Crockford’s Base32 alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "crockford"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/crockford",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "crockford",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/crockford"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/geohash": {
+  "abstract" : [
+    {
+      "text" : "The Geohash alphabet, used in the Geohash algorithm. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "geohash"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/geohash",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "geohash",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/geohash"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/rfc4648": {
+  "abstract" : [
+    {
+      "text" : "The alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Contains a ",
+      "type" : "text"
+    },
+    {
+      "code" : "=",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rfc4648"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/rfc4648",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rfc4648",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/rfc4648"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/wordSafe": {
+  "abstract" : [
+    {
+      "text" : "The word-safe alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "wordSafe"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/wordSafe",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "wordSafe",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/wordsafe"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet/zBase32": {
+  "abstract" : [
+    {
+      "text" : "The z-base-32 alphabet. Does not contain a padding character.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "zBase32"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet\/zBase32",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "zBase32",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet\/zbase32"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet/base64url": {
+  "abstract" : [
+    {
+      "text" : "The base64url alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base64url"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/base64url",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base64url",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet\/base64url"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet/imapMailboxNames": {
+  "abstract" : [
+    {
+      "text" : "The Base64 for IMAP mailbox names alphabet defined in",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc3501",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "imapMailboxNames"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/imapMailboxNames",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "imapMailboxNames",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet\/imapmailboxnames"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet/mime": {
+  "abstract" : [
+    {
+      "text" : "The Base64 transfer encoding for MIME alphabet found in",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2045",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " with the maximum line length of 76.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mime"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/mime",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "mime",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet\/mime"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet/standard": {
+  "abstract" : [
+    {
+      "text" : "The standard alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "standard"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/standard",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "standard",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet\/standard"
+},
+"doc://Bases/documentation/Bases/Base64/Alphabet/utf7": {
+  "abstract" : [
+    {
+      "text" : "The Base64 for UTF-7 alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2152",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "utf7"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O",
+      "text" : "Base64"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base64O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/utf7",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "utf7",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/alphabet\/utf7"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/adobeAscii85": {
+  "abstract" : [
+    {
+      "text" : "The Adobe Acii85 alphabet.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "Uses ",
+      "type" : "text"
+    },
+    {
+      "code" : "<~",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as start delimeter and ",
+      "type" : "text"
+    },
+    {
+      "code" : "~>",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as end delimeter.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "adobeAscii85"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/adobeAscii85",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "adobeAscii85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/adobeascii85"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/ascii": {
+  "abstract" : [
+    {
+      "text" : "The alphabet consisting of the ASCII characters ",
+      "type" : "text"
+    },
+    {
+      "code" : "!",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " through ",
+      "type" : "text"
+    },
+    {
+      "code" : "u",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ascii"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/ascii",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ascii",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/ascii"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/btoaLike": {
+  "abstract" : [
+    {
+      "text" : "The alphabet similar to btoa, but without the prefix or suffix.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "btoaLike"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/btoaLike",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "btoaLike",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/btoalike"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/rfc1924Like": {
+  "abstract" : [
+    {
+      "text" : "The alphabet defined in ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "The way the encoder in this package works differs from the scheme defined in the RFC 1924.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rfc1924Like"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/rfc1924Like",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rfc1924Like",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/rfc1924like"
+},
+"doc://Bases/documentation/Bases/Base85/Alphabet/z85": {
+  "abstract" : [
+    {
+      "text" : "The Z85 ZeroMQ alphabet.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "z85"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/z85",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "z85",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base85\/alphabet\/z85"
+},
+"https://datatracker.ietf.org/doc/html/rfc1924": {
+  "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924",
+  "title" : "RFC 1924",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 1924",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc1924"
+},
+"https://datatracker.ietf.org/doc/html/rfc2045": {
+  "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2045",
+  "title" : "RFC 2045",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 2045",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2045"
+},
+"https://datatracker.ietf.org/doc/html/rfc2152": {
+  "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2152",
+  "title" : "RFC 2152",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 2152",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc2152"
+},
+"https://datatracker.ietf.org/doc/html/rfc3501": {
+  "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc3501",
+  "title" : "RFC 3501",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 3501",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc3501"
+},
+"https://www.rfc-editor.org/rfc/rfc4648.html": {
+  "identifier" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html",
+  "title" : "RFC 4648",
+  "titleInlineContent" : [
+    {
+      "text" : "RFC 4648",
+      "type" : "text"
+    }
+  ],
+  "type" : "link",
+  "url" : "https:\/\/www.rfc-editor.org\/rfc\/rfc4648.html"
+}
+}
+}
