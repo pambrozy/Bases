@@ -1,11 +1,13 @@
-name: Lint, Build & Test on MacOS
+name: Lint, Build & Test on Linux
 
 on: push
 
 jobs:
-  macos:
+  linux:
     name: Lint, Build & Test
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/realm/swiftlint:5.5-latest
     steps:
       - uses: fwal/setup-swift@v1
       - uses: actions/checkout@v3
