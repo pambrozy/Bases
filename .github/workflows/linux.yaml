@@ -9,7 +9,6 @@ jobs:
     container:
       image: ghcr.io/realm/swiftlint:5.5-latest
     steps:
-      - uses: fwal/setup-swift@v1
       - uses: actions/checkout@v3
       - name: Lint
         run: swiftlint lint --reporter github-actions-logging --strict
