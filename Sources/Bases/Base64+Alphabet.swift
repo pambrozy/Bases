@@ -132,6 +132,8 @@ extension Base64.Alphabet {
 
     /// The Base64 transfer encoding for MIME alphabet found in
     /// [RFC 2045](https://datatracker.ietf.org/doc/html/rfc2045) with the maximum line length of 76.
+    ///
+    /// If you want a custom line length, use the ``mime(lineLength:)`` method.
     public static let mime = Self(
         uncheckedCharacters: [
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
