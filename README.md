@@ -1,6 +1,7 @@
 # Bases
 
-![build on linux](https://github.com/pambrozy/Bases/workflows/linux/badge.svg)
+![build on macos](https://github.com/pambrozy/Bases/actions/workflows/macos.yaml/badge.svg)
+![build on linux](https://github.com/pambrozy/Bases/actions/workflows/linux.yaml/badge.svg)
 
 A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.
 
