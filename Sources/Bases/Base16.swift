@@ -13,7 +13,7 @@ public enum Base16 {
 
     // MARK: - Alphabet
 
-    /// An alphabet definig a set of characters used for the Base-16 encoding.
+    /// An alphabet defining a set of characters used for the Base-16 encoding.
     public struct Alphabet {
         /// The ordered array mapping the 16 values to ASCII character codes.
         public let characters: [Character]
