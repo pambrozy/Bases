@@ -264,7 +264,7 @@
 "doc://Bases/documentation/Bases/Base32/Alphabet": {
   "abstract" : [
     {
-      "text" : "An alphabet definig a set of characters used for the Base-32 encoding.",
+      "text" : "An alphabet defining a set of characters used for the Base-32 encoding.",
       "type" : "text"
     }
   ],

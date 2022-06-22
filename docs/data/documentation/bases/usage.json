@@ -105,7 +105,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " method:",
+              "text" : " method of ",
+              "type" : "text"
+            },
+            {
+              "code" : "Data",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
               "type" : "text"
             }
           ],
@@ -160,7 +168,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The use the ",
+              "text" : "Then use the ",
               "type" : "text"
             },
             {
@@ -246,11 +254,11 @@
         {
           "inlineContent" : [
             {
-              "text" : "In the next few examples we will use the example ",
+              "text" : "In the next few examples we will use the ",
               "type" : "text"
             },
             {
-              "code" : "Codable",
+              "code" : "Example",
               "type" : "codeVoice"
             },
             {
@@ -272,7 +280,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "Let’s create an instance of this struct:",
+              "text" : "Let’s create an instance of it:",
               "type" : "text"
             }
           ],
@@ -336,8 +344,8 @@
         {
           "code" : [
             "do {",
-            "    let encoded = try encoder.encode(decoded)",
-            "    print(String(decoding: encoded, as: UTF8.self))",
+            "    let encodedExample = try encoder.encode(example)",
+            "    print(String(decoding: encodedExample, as: UTF8.self))",
             "    \/\/ Prints: {\"data\":\"IFBEG===\"}",
             "} catch {",
             "    print(\"Cannot encode: \\(error.localizedDescription)\")",
@@ -397,8 +405,8 @@
         {
           "code" : [
             "do {",
-            "    let decoded = try decoder.decode(Example.self, from: validData)",
-            "    print(Array(decoded.data))",
+            "    let decodedExample = try decoder.decode(Example.self, from: encodedExample)",
+            "    print(Array(decodedExample.data))",
             "    \/\/ Prints: [65, 66, 67]",
             "} catch {",
             "    print(\"Cannot decode: \\(error.localizedDescription)\")",

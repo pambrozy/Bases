@@ -212,7 +212,7 @@
 "doc://Bases/documentation/Bases/Base16/Alphabet": {
   "abstract" : [
     {
-      "text" : "An alphabet definig a set of characters used for the Base-16 encoding.",
+      "text" : "An alphabet defining a set of characters used for the Base-16 encoding.",
       "type" : "text"
     }
   ],
