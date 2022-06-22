@@ -13,7 +13,7 @@ public enum Base64 {
 
     // MARK: - Alphabet
 
-    /// An alphabet definig a set of characters used for the Base-64 encoding.
+    /// An alphabet defining a set of characters used for the Base-64 encoding.
     public struct Alphabet: Equatable {
         /// The ordered array mapping the 64 values to ASCII character codes.
         public let characters: [Character]
