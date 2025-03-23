@@ -58,7 +58,7 @@ let example = Example(data: Data([65, 66, 67]))
 ```
 
 ### Encoding
-To encode the struct, create an instance of JSONEncoder and
+To encode the struct, create an instance of `JSONEncoder` and
 set its `dataEncodingStrategy` to an appropriate encoder:
 ```swift
 let encoder = JSONEncoder()
@@ -77,7 +77,7 @@ do {
 ```
 
 ### Decoding
-To decode a JSON string, create an instance of JSONDecoder and
+To decode a JSON string, create an instance of `JSONDecoder` and
 set its `dataDecodingStrategy` to an appropriate decoder:
 ```swift
 let decoder = JSONDecoder()
