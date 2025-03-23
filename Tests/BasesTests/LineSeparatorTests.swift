@@ -7,28 +7,33 @@
 //
 
 @testable import Bases
-import XCTest
+import Foundation
+import Testing
 
-final class LineSeparatorTests: XCTestCase {
-    func testUncheckedInit() {
+@Suite("LineSeparator")
+struct LineSeparatorTests {
+    @Test
+    func uncheckedInit() {
         let lineSeparator = LineSeparator(separator: "a", uncheckedLength: 3)
 
-        XCTAssertEqual(lineSeparator.separator, "a")
-        XCTAssertEqual(lineSeparator.length, 3)
+        #expect(lineSeparator.separator == "a")
+        #expect(lineSeparator.length == 3)
     }
 
-    func testInit() throws {
-        XCTAssertThrowsError(try LineSeparator(separator: "a", length: 0)) { error in
-            XCTAssertEqual(error as? LineSeparatorError, LineSeparatorError.nonPositiveLength)
+    @Test
+    func initalization() throws {
+        #expect(throws: LineSeparatorError.nonPositiveLength) {
+            try LineSeparator(separator: "a", length: 0)
         }
 
         let lineSeparator = try LineSeparator(separator: "a", length: 3)
 
-        XCTAssertEqual(lineSeparator.separator, "a")
-        XCTAssertEqual(lineSeparator.length, 3)
+        #expect(lineSeparator.separator == "a")
+        #expect(lineSeparator.length == 3)
     }
 
-    func testBase64() throws {
+    @Test
+    func base64() throws {
         let lineSeparator = try LineSeparator(separator: "_", length: 3)
         let alphabet = try Base64.Alphabet(
             characters: Base64.Alphabet.standard.characters,
@@ -40,6 +45,6 @@ final class LineSeparatorTests: XCTestCase {
         let data = Data(repeating: 0x41, count: 10)
         let encoded = encoder.encode(data)
 
-        XCTAssertEqual(encoded, "QUF_BQU_FBQ_UFB_QQ=_=")
+        #expect(encoded == "QUF_BQU_FBQ_UFB_QQ=_=")
     }
 }

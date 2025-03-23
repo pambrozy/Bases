@@ -7,13 +7,16 @@
 //
 
 @testable import Bases
-import XCTest
+import Foundation
+import Testing
 
-final class Bases85Tests: XCTestCase {
+@Suite("Base85")
+struct Bases85Tests {
 
     // MARK: Built-in alphabets
 
-    func testBuiltInAsciiAlphabet() throws {
+    @Test
+    func builtInAsciiAlphabet() throws {
         let ascii = try Base85.Alphabet(
             characters: [
                 "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0",
@@ -28,10 +31,11 @@ final class Bases85Tests: XCTestCase {
             fourZeros: nil,
             fourSpaces: nil
         )
-        XCTAssertEqual(ascii, Base85.Alphabet.ascii)
+        #expect(ascii == Base85.Alphabet.ascii)
     }
 
-    func testBuiltInBtoaLikeAlphabet() throws {
+    @Test
+    func builtInBtoaLikeAlphabet() throws {
         let btoaLike = try Base85.Alphabet(
             characters: [
                 "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0",
@@ -46,10 +50,11 @@ final class Bases85Tests: XCTestCase {
             fourZeros: "z",
             fourSpaces: "y"
         )
-        XCTAssertEqual(btoaLike, Base85.Alphabet.btoaLike)
+        #expect(btoaLike == Base85.Alphabet.btoaLike)
     }
 
-    func testBuiltInAdobeAscii85Alphabet() throws {
+    @Test
+    func builtInAdobeAscii85Alphabet() throws {
         let adobeAscii85 = try Base85.Alphabet(
             characters: [
                 "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0",
@@ -64,10 +69,11 @@ final class Bases85Tests: XCTestCase {
             fourZeros: "z",
             fourSpaces: nil
         )
-        XCTAssertEqual(adobeAscii85, Base85.Alphabet.adobeAscii85)
+        #expect(adobeAscii85 == Base85.Alphabet.adobeAscii85)
     }
 
-    func testBuiltInRfc1924LikeAlphabet() throws {
+    @Test
+    func builtInRfc1924LikeAlphabet() throws {
         let rfc1924 = try Base85.Alphabet(
             characters: [
                 "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F",
@@ -82,10 +88,11 @@ final class Bases85Tests: XCTestCase {
             fourZeros: nil,
             fourSpaces: nil
         )
-        XCTAssertEqual(rfc1924, Base85.Alphabet.rfc1924Like)
+        #expect(rfc1924 == Base85.Alphabet.rfc1924Like)
     }
 
-    func testBuiltInZ85Alphabet() throws {
+    @Test
+    func builtInZ85Alphabet() throws {
         let z85 = try Base85.Alphabet(
             characters: [
                 "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f",
@@ -100,11 +107,12 @@ final class Bases85Tests: XCTestCase {
             fourZeros: nil,
             fourSpaces: nil
         )
-        XCTAssertEqual(z85, Base85.Alphabet.z85)
+        #expect(z85 == Base85.Alphabet.z85)
     }
 
-    func testAlphabet() {
-        XCTAssertThrowsError(
+    @Test
+    func alphabet() {
+        #expect(throws: AlphabetError.wrongNumberOfCharacters) {
             try Base85.Alphabet(
                 characters: [],
                 startDelimeter: nil,
@@ -112,12 +120,10 @@ final class Bases85Tests: XCTestCase {
                 fourZeros: nil,
                 fourSpaces: nil
             )
-        ) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.wrongNumberOfCharacters)
         }
 
         let notEmpty = [Character](repeating: "¡", count: 85)
-        XCTAssertThrowsError(
+        #expect(throws: AlphabetError.noAsciiValue) {
             try Base85.Alphabet(
                 characters: notEmpty,
                 startDelimeter: nil,
@@ -125,35 +131,36 @@ final class Bases85Tests: XCTestCase {
                 fourZeros: nil,
                 fourSpaces: nil
             )
-        ) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
         }
     }
 
-    func testDecoding() {
+    @Test
+    func decoding() {
         let decoder = Base85.Decoder(alphabet: .ascii)
-        XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
+        #expect(throws: BaseDecodingError.nonAsciiCharacters) {
+            try decoder.decode("¡")
         }
-        XCTAssertThrowsError(try decoder.decode("w")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
+        #expect(throws: BaseDecodingError.valuesNotInAlphabet) {
+            try decoder.decode("w")
         }
     }
 
     // MARK: Examples
 
-    func testAscii() throws {
+    @Test
+    func ascii() throws {
         let encoder = Base85.Encoder(alphabet: .ascii)
         let decoder = Base85.Decoder(alphabet: .ascii)
 
         let testData = Data([0x41, 0x42, 0x43, 0x44])
 
-        XCTAssertEqual(encoder.encode(testData), "5sdq,")
-        XCTAssertEqual(try decoder.decode("5sdq,"), testData)
+        #expect(encoder.encode(testData) == "5sdq,")
+        #expect(try decoder.decode("5sdq,") == testData)
 
     }
 
-    func testBtoaLike() throws {
+    @Test
+    func btoaLike() throws {
         let encoder = Base85.Encoder(alphabet: .btoaLike)
         let decoder = Base85.Decoder(alphabet: .btoaLike)
 
@@ -162,22 +169,23 @@ final class Bases85Tests: XCTestCase {
             0x45, 0x46, 0x47, 0x48, 0x49, 0x4A
         ])
 
-        XCTAssertEqual(encoder.encode(testData1), "5sdq,y77Kd<8P/")
-        XCTAssertEqual(try decoder.decode("5sdq,y77Kd<8P/"), testData1)
+        #expect(encoder.encode(testData1) == "5sdq,y77Kd<8P/")
+        #expect(try decoder.decode("5sdq,y77Kd<8P/") == testData1)
 
         let testData2 = Data([0, 0, 0, 0, 1])
-        XCTAssertEqual(encoder.encode(testData2), "z!<")
-        XCTAssertEqual(try decoder.decode("z!<"), testData2)
+        #expect(encoder.encode(testData2) == "z!<")
+        #expect(try decoder.decode("z!<") == testData2)
 
         let testData3 = Data([0, 0, 0, 0, 0, 0, 0, 0])
-        XCTAssertEqual(encoder.encode(testData3), "z!!!!!")
-        XCTAssertEqual(try decoder.decode("z!!!!!"), testData3)
+        #expect(encoder.encode(testData3) == "z!!!!!")
+        #expect(try decoder.decode("z!!!!!") == testData3)
 
-        XCTAssertEqual(encoder.encode(Data()), "")
-        XCTAssertEqual(try decoder.decode(""), Data())
+        #expect(encoder.encode(Data()).isEmpty)
+        #expect(try decoder.decode("") == Data())
     }
 
-    func testAdobeAscii85() throws {
+    @Test
+    func adobeAscii85() throws {
         let encoder = Base85.Encoder(alphabet: .adobeAscii85)
         let decoder = Base85.Decoder(alphabet: .adobeAscii85)
 
@@ -210,11 +218,12 @@ final class Bases85Tests: XCTestCase {
             #"D.RTpAKYo'+CT/5+Cei#DII?(E,9)oF*2M7/c"# +
             #"~>"#
 
-        XCTAssertEqual(encoder.encode(decodedData), encodedData)
-        XCTAssertEqual(try decoder.decode(encodedData), decodedData)
+        #expect(encoder.encode(decodedData) == encodedData)
+        #expect(try decoder.decode(encodedData) == decodedData)
     }
 
-    func testRfc1924Like() throws {
+    @Test
+    func rfc1924Like() throws {
         let encoder = Base85.Encoder(alphabet: .rfc1924Like)
         let decoder = Base85.Decoder(alphabet: .rfc1924Like)
 
@@ -225,17 +234,18 @@ final class Bases85Tests: XCTestCase {
 
         let encodedData = "5P$#x0000000;;GAPhlz"
 
-        XCTAssertEqual(encoder.encode(decodedData), encodedData)
-        XCTAssertEqual(try decoder.decode(encodedData), decodedData)
+        #expect(encoder.encode(decodedData) == encodedData)
+        #expect(try decoder.decode(encodedData) == decodedData)
     }
 
-    func testZ85() throws {
+    @Test
+    func z85() throws {
         let encoder = Base85.Encoder(alphabet: .z85)
         let decoder = Base85.Decoder(alphabet: .z85)
 
         let testData1 = Data([0x86, 0x4F, 0xD2, 0x6F, 0xB5, 0x59, 0xF7, 0x5B])
-        XCTAssertEqual(encoder.encode(testData1), "HelloWorld")
-        XCTAssertEqual(try decoder.decode("HelloWorld"), testData1)
+        #expect(encoder.encode(testData1) == "HelloWorld")
+        #expect(try decoder.decode("HelloWorld") == testData1)
 
         let testData2 = Data([
             0x8E, 0x0B, 0xDD, 0x69, 0x76, 0x28, 0xB9, 0x1D,
@@ -243,7 +253,7 @@ final class Bases85Tests: XCTestCase {
             0x4D, 0x48, 0x96, 0x3F, 0x79, 0x25, 0x98, 0x77,
             0xB4, 0x9C, 0xD9, 0x06, 0x3A, 0xEA, 0xD3, 0xB7
         ])
-        XCTAssertEqual(encoder.encode(testData2), "JTKVSB%%)wK0E.X)V>+}o?pNmC{O&4W4b!Ni{Lh6")
-        XCTAssertEqual(try decoder.decode("JTKVSB%%)wK0E.X)V>+}o?pNmC{O&4W4b!Ni{Lh6"), testData2)
+        #expect(encoder.encode(testData2) == "JTKVSB%%)wK0E.X)V>+}o?pNmC{O&4W4b!Ni{Lh6")
+        #expect(try decoder.decode("JTKVSB%%)wK0E.X)V>+}o?pNmC{O&4W4b!Ni{Lh6") == testData2)
     }
 }

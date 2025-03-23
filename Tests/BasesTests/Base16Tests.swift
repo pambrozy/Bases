@@ -7,71 +7,58 @@
 //
 
 @testable import Bases
-import XCTest
+import Testing
 
-struct StringEncodingError: Error { }
-
-final class Bases16Tests: XCTestCase {
-    func testUppercase() throws {
+@Suite("Base16")
+struct Bases16Tests {
+    @Test(arguments: [
+        ("", ""),
+        ("f", "66"),
+        ("fo", "666F"),
+        ("foo", "666F6F"),
+        ("foob", "666F6F62"),
+        ("fooba", "666F6F6261"),
+        ("foobar", "666F6F626172")
+    ])
+    func uppercase(decodedString: String, encoded: String) throws {
         let encoder = Base16.Encoder(alphabet: .uppercase)
         let decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: .uppercase)
         let ignoringDecoder = Base16.Decoder(ignoreUnknownCharacters: true, alphabet: .uppercase)
 
-        let data = [
-            ("", ""),
-            ("f", "66"),
-            ("fo", "666F"),
-            ("foo", "666F6F"),
-            ("foob", "666F6F62"),
-            ("fooba", "666F6F6261"),
-            ("foobar", "666F6F626172")
-        ]
-
-        for (decodedString, encoded) in data {
-            guard let decoded = decodedString.data(using: .utf8) else {
-                throw StringEncodingError()
-            }
-            XCTAssertEqual(encoder.encode(decoded), encoded)
-            XCTAssertEqual(try decoder.decode(encoded), decoded)
-            XCTAssertEqual(try ignoringDecoder.decode("_" + encoded + "_"), decoded)
-        }
+        let decoded = try #require(decodedString.data(using: .utf8))
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
+        #expect(try ignoringDecoder.decode("_" + encoded + "_") == decoded)
     }
 
-    func testLowercase() throws {
+    @Test(arguments: [
+        ("", ""),
+        ("f", "66"),
+        ("fo", "666f"),
+        ("foo", "666f6f"),
+        ("foob", "666f6f62"),
+        ("fooba", "666f6f6261"),
+        ("foobar", "666f6f626172")
+    ])
+    func lowercase(decodedString: String, encoded: String) throws {
         let encoder = Base16.Encoder(alphabet: .lowercase)
         let decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: .lowercase)
         let ignoringDecoder = Base16.Decoder(ignoreUnknownCharacters: true, alphabet: .lowercase)
 
-        let data = [
-            ("", ""),
-            ("f", "66"),
-            ("fo", "666f"),
-            ("foo", "666f6f"),
-            ("foob", "666f6f62"),
-            ("fooba", "666f6f6261"),
-            ("foobar", "666f6f626172")
-        ]
-
-        for (decodedString, encoded) in data {
-            guard let decoded = decodedString.data(using: .utf8) else {
-                throw StringEncodingError()
-            }
-            XCTAssertEqual(encoder.encode(decoded), encoded)
-            XCTAssertEqual(try decoder.decode(encoded), decoded)
-            XCTAssertEqual(try ignoringDecoder.decode("_" + encoded + "_"), decoded)
-        }
+        let decoded = try #require(decodedString.data(using: .utf8))
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
+        #expect(try ignoringDecoder.decode("_" + encoded + "_") == decoded)
     }
 
-    func testDecoding() {
+    @Test
+    func decoding() {
         var decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: .lowercase)
-        XCTAssertThrowsError(try decoder.decode("000z")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
+        #expect(throws: BaseDecodingError.valuesNotInAlphabet) {
+            try decoder.decode("000z")
         }
-        XCTAssertThrowsError(try decoder.decode("000")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.wrongNumberOfBytes)
-        }
-        XCTAssertThrowsError(try decoder.decode("000")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.wrongNumberOfBytes)
+        #expect(throws: BaseDecodingError.wrongNumberOfBytes) {
+            try decoder.decode("000")
         }
 
         let invalidAlphabet = Base16.Alphabet(
@@ -80,33 +67,35 @@ final class Bases16Tests: XCTestCase {
         )
         decoder = Base16.Decoder(ignoreUnknownCharacters: false, alphabet: invalidAlphabet)
 
-        XCTAssertThrowsError(try decoder.decode("0¡")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
+        #expect(throws: BaseDecodingError.nonAsciiCharacters) {
+            try decoder.decode("0¡")
         }
-        XCTAssertThrowsError(try decoder.decode("00")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
+        #expect(throws: BaseDecodingError.valuesNotInAlphabet) {
+            try decoder.decode("00")
         }
     }
 
-    func testBuiltInAlphabets() throws {
+    @Test
+    func builtInAlphabets() throws {
         let uppercase = try Base16.Alphabet(characters: Base16.Alphabet.uppercase.characters)
-        XCTAssertEqual(uppercase.characters, Base16.Alphabet.uppercase.characters)
-        XCTAssertEqual(uppercase.values, Base16.Alphabet.uppercase.values)
+        #expect(uppercase.characters == Base16.Alphabet.uppercase.characters)
+        #expect(uppercase.values == Base16.Alphabet.uppercase.values)
 
         let lowercase = try Base16.Alphabet(characters: Base16.Alphabet.lowercase.characters)
-        XCTAssertEqual(lowercase.characters, Base16.Alphabet.lowercase.characters)
-        XCTAssertEqual(lowercase.values, Base16.Alphabet.lowercase.values)
+        #expect(lowercase.characters == Base16.Alphabet.lowercase.characters)
+        #expect(lowercase.values == Base16.Alphabet.lowercase.values)
     }
 
-    func testAlphabet() {
-        XCTAssertThrowsError(try Base16.Alphabet(characters: [])) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.wrongNumberOfCharacters)
+    @Test
+    func alphabet() {
+        #expect(throws: AlphabetError.wrongNumberOfCharacters) {
+            try Base16.Alphabet(characters: [])
         }
         let nonAscii: [Character] = [
             "¡", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"
         ]
-        XCTAssertThrowsError(try Base16.Alphabet(characters: nonAscii)) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
+        #expect(throws: AlphabetError.noAsciiValue) {
+            try Base16.Alphabet(characters: nonAscii)
         }
     }
 }
