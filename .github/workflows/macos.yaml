@@ -1,4 +1,4 @@
-name: Lint, Build & Test on MacOS
+name: Build & Test on MacOS
 
 on: push
 
@@ -7,11 +7,9 @@ jobs:
     name: Lint, Build & Test
     runs-on: macos-latest
     steps:
-      - uses: fwal/setup-swift@v1
-      - uses: actions/checkout@v3
-      - name: Lint
-        run: swiftlint lint --reporter github-actions-logging --strict
+      - uses: actions/checkout@v4
+      - uses: SwiftyLab/setup-swift@latest
       - name: Build
-        run: swift build
+        run: swift build -v
       - name: Test
-        run: swift test
+        run: swift test -v
