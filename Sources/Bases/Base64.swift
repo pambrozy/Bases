@@ -14,7 +14,7 @@ public enum Base64 {
     // MARK: - Alphabet
 
     /// An alphabet defining a set of characters used for the Base-64 encoding.
-    public struct Alphabet: Equatable {
+    public struct Alphabet: Hashable, Sendable {
         /// The ordered array mapping the 64 values to ASCII character codes.
         public let characters: [Character]
 
@@ -72,7 +72,7 @@ public enum Base64 {
     // MARK: - Encoder
 
     /// The Base-64 Encoder.
-    public struct Encoder {
+    public struct Encoder: Hashable, Sendable {
         /// The alphabet used to encode data.
         public let alphabet: Alphabet
 
@@ -143,7 +143,7 @@ public enum Base64 {
     // MARK: - Decoder
 
     /// The Base-64 Decoder.
-    public struct Decoder {
+    public struct Decoder: Hashable, Sendable {
         /// The alphabet used to decode data.
         public let alphabet: Alphabet
 

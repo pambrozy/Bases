@@ -14,7 +14,7 @@ public enum Base85 {
     // MARK: - Alphabet
 
     /// An alphabet defining a set of characters used for the Base-85 encoding.
-    public struct Alphabet: Equatable {
+    public struct Alphabet: Hashable, Sendable {
         /// The ordered array mapping the 85 values to ASCII character codes.
         public let characters: [Character]
 
@@ -91,7 +91,7 @@ public enum Base85 {
     // MARK: - Encoder
 
     /// The Base-85 Encoder.
-    public struct Encoder {
+    public struct Encoder: Hashable, Sendable {
         let alphabet: Alphabet
 
         /// Creates a new encoder.
@@ -176,7 +176,7 @@ public enum Base85 {
     // MARK: - Decoder
 
     /// The Base-32 Decoder.
-    public struct Decoder {
+    public struct Decoder: Hashable, Sendable {
         /// The alphabet used to decode data.
         public let alphabet: Alphabet
 

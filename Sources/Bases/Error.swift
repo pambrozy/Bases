@@ -7,13 +7,13 @@
 //
 
 /// An error that may occur when creating a line separator.
-public enum LineSeparatorError: Error {
+public enum LineSeparatorError: Error, Sendable {
     /// The length of the string is less than of equal to zero.
     case nonPositiveLength
 }
 
 /// An error that might occur when creating an alphabet.
-public enum AlphabetError: Error {
+public enum AlphabetError: Error, Sendable {
     /// The number of characters does not match the number of characters
     /// required to create the alphabet for a given encoding.
     case wrongNumberOfCharacters
@@ -22,7 +22,7 @@ public enum AlphabetError: Error {
 }
 
 /// An error that may occur when decoding the string.
-public enum BaseDecodingError: Error {
+public enum BaseDecodingError: Error, Sendable {
     /// The length of the provided string is invalid.
     case wrongNumberOfBytes
     /// The string to decode contains non-ASCII values.
