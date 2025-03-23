@@ -93,7 +93,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -101,6 +101,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Errors",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
@@ -111,6 +112,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/nonAsciiCharacters",
         "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/valuesNotInAlphabet",
@@ -119,6 +122,7 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError\/Equatable-Implementations",

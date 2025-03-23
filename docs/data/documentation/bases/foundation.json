@@ -1,0 +1,159 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Foundation"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:m:s:e:s:10Foundation4DataV5BasesE13base16Encoded8alphabetACSgSS_AD6Base16O8AlphabetVtcfc",
+    "modules" : [
+      {
+        "name" : "Bases"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Extended Module",
+    "symbolKind" : "extension",
+    "title" : "Foundation"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Extended-Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data"
+      ],
+      "title" : "Extended Structures"
+    },
+    {
+      "anchor" : "Extended-Types",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder"
+      ],
+      "title" : "Extended Types"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/foundation"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
+},
+"doc://Bases/documentation/Bases/Foundation/Data": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Data"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Data",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONDecoder": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JSONDecoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONDecoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsondecoder"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JSONEncoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONEncoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder"
+}
+}
+}

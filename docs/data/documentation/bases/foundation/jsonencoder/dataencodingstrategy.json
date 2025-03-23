@@ -1,0 +1,459 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:e:s:10Foundation11JSONEncoderC20DataEncodingStrategyO5BasesE6base168alphabetAeF6Base16O8AlphabetV_tFZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+        "text" : "JSONEncoder"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+        "text" : "DataEncodingStrategy"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "DataEncodingStrategy"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Enumeration",
+    "symbolKind" : "extension",
+    "title" : "JSONEncoder.DataEncodingStrategy"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+              "text" : "JSONEncoder"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+              "text" : "DataEncodingStrategy"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Type-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base16(alphabet:)",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base32(alphabet:)",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base85(alphabet:)"
+      ],
+      "title" : "Type Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JSONEncoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONEncoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder/DataEncodingStrategy": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+      "text" : "DataEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DataEncodingStrategy"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONEncoder.DataEncodingStrategy",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder/DataEncodingStrategy/base16(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the strategy that encodes data using Base 16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+      "text" : "DataEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base16(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base16(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base16(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder/DataEncodingStrategy/base32(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the strategy that encodes data using Base 32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+      "text" : "DataEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base32(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base32(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base32(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONEncoder/DataEncodingStrategy/base85(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the strategy that encodes data using Base 85 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "text" : "JSONEncoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONEncoderC20DataEncodingStrategyO",
+      "text" : "DataEncodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONEncoder\/DataEncodingStrategy\/base85(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base85(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base85(alphabet:)"
+}
+}
+}

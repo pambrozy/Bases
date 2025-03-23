@@ -96,7 +96,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -104,6 +104,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Encodings",
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base16",
         "doc:\/\/Bases\/documentation\/Bases\/Base32",
@@ -113,12 +114,14 @@
       "title" : "Encodings"
     },
     {
+      "anchor" : "Line-Separator",
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/LineSeparator"
       ],
       "title" : "Line Separator"
     },
     {
+      "anchor" : "Errors",
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
         "doc:\/\/Bases\/documentation\/Bases\/AlphabetError",
@@ -127,12 +130,21 @@
       "title" : "Errors"
     },
     {
+      "anchor" : "Articles",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/Bases\/documentation\/Bases\/Usage",
-        "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets"
+        "doc:\/\/Bases\/documentation\/Bases\/Built-In-Alphabets",
+        "doc:\/\/Bases\/documentation\/Bases\/Usage"
       ],
       "title" : "Articles"
+    },
+    {
+      "anchor" : "Extended-Modules",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -380,6 +392,17 @@
   "title" : "Built-In Alphabets",
   "type" : "topic",
   "url" : "\/documentation\/bases\/built-in-alphabets"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
 },
 "doc://Bases/documentation/Bases/LineSeparator": {
   "abstract" : [

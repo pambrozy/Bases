@@ -93,7 +93,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -101,6 +101,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Errors",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/BaseDecodingError",
@@ -111,12 +112,15 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError\/nonPositiveLength"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/LineSeparatorError\/Equatable-Implementations",

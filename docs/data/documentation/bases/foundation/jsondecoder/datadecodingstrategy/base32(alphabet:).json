@@ -1,0 +1,461 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns the strategy that decodes data using Base 32 decoding.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder\/DataDecodingStrategy"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder\/DataDecodingStrategy\/base32(alphabet:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:10Foundation11JSONDecoderC20DataDecodingStrategyO5BasesE6base328alphabetAeF6Base32O8AlphabetV_tFZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "base32"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base32O",
+        "text" : "Base32"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+        "text" : "Alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+        "text" : "JSONDecoder"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DataDecodingStrategyO",
+        "text" : "DataDecodingStrategy"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Method",
+    "symbolKind" : "method",
+    "title" : "base32(alphabet:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "base32"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base32O",
+              "text" : "Base32"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+              "text" : "Alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+              "text" : "JSONDecoder"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DataDecodingStrategyO",
+              "text" : "DataDecodingStrategy"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The alphabet to use to decode the string.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "alphabet"
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy\/base32(alphabet:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base32": {
+  "abstract" : [
+    {
+      "text" : "The Base-32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base32"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base32",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32"
+},
+"doc://Bases/documentation/Bases/Base32/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet defining a set of characters used for the Base-32 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base32\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base32.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base32\/alphabet"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONDecoder": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "JSONDecoder"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONDecoder",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsondecoder"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONDecoder/DataDecodingStrategy": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+      "text" : "JSONDecoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DataDecodingStrategyO",
+      "text" : "DataDecodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder\/DataDecodingStrategy",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DataDecodingStrategy"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "JSONDecoder.DataDecodingStrategy",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy"
+},
+"doc://Bases/documentation/Bases/Foundation/JSONDecoder/DataDecodingStrategy/base32(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the strategy that decodes data using Base 32 decoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC",
+      "text" : "JSONDecoder"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation11JSONDecoderC20DataDecodingStrategyO",
+      "text" : "DataDecodingStrategy"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/JSONDecoder\/DataDecodingStrategy\/base32(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base32(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy\/base32(alphabet:)"
+}
+}
+}

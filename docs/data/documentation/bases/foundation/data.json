@@ -1,0 +1,778 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:e:s:10Foundation4DataV5BasesE13base16Encoded8alphabetACSgSS_AD6Base16O8AlphabetVtcfc",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:10Foundation4DataV",
+        "text" : "Data"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Data"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Structure",
+    "symbolKind" : "extension",
+    "title" : "Data"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:10Foundation4DataV",
+              "text" : "Data"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base16Encoded:alphabet:)-1vw98",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base16Encoded:alphabet:)-8gdjr",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base32Encoded:alphabet:)-1peaj",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base32Encoded:alphabet:)-6gvsz",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base85Encoded:alphabet:)-1i0oy",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base85Encoded:alphabet:)-7cglx"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base16EncodedString(alphabet:)",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base32EncodedString(alphabet:)",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base85EncodedString(alphabet:)"
+      ],
+      "title" : "Instance Methods"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/foundation\/data"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
+},
+"doc://Bases/documentation/Bases/Foundation/Data": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Data"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Data",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/base16EncodedString(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a Base-16 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base16EncodedString"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base16EncodedString(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base16EncodedString(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/base16encodedstring(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/base32EncodedString(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a Base-32 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base32EncodedString"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base32EncodedString(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base32EncodedString(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/base32encodedstring(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/base85EncodedString(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a Base-85 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base85EncodedString"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base85EncodedString(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base85EncodedString(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/base85encodedstring(alphabet:)"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base16Encoded:alphabet:)-1vw98": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base16 encoded data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base16Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base16Encoded:alphabet:)-1vw98",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base16Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base16encoded:alphabet:)-1vw98"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base16Encoded:alphabet:)-8gdjr": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base16 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base16Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base16Encoded:alphabet:)-8gdjr",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base16Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base16encoded:alphabet:)-8gdjr"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base32Encoded:alphabet:)-1peaj": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base32 encoded data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base32Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base32Encoded:alphabet:)-1peaj",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base32Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base32encoded:alphabet:)-1peaj"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base32Encoded:alphabet:)-6gvsz": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base32 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base32Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O",
+      "text" : "Base32"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base32O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base32Encoded:alphabet:)-6gvsz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base32Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base32encoded:alphabet:)-6gvsz"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base85Encoded:alphabet:)-1i0oy": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base85 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base85Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base85Encoded:alphabet:)-1i0oy",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base85Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base85encoded:alphabet:)-1i0oy"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/init(base85Encoded:alphabet:)-7cglx": {
+  "abstract" : [
+    {
+      "text" : "Initializes a data object with the given Base85 encoded data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "base85Encoded"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O",
+      "text" : "Base85"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base85O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/init(base85Encoded:alphabet:)-7cglx",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(base85Encoded:alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/init(base85encoded:alphabet:)-7cglx"
+}
+}
+}

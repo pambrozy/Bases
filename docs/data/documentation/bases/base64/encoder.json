@@ -79,9 +79,21 @@
       "kind" : "declarations"
     }
   ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Bases\/SQ",
+        "doc:\/\/Bases\/SH",
+        "doc:\/\/Bases\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -89,12 +101,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/init(alphabet:pad:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/alphabet",
         "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/pad"
@@ -102,10 +118,20 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/encode(_:)"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -122,6 +148,16 @@
   ]
 , 
 "references": {
+"doc://Bases/SH": {
+  "identifier" : "doc:\/\/Bases\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://Bases/SQ": {
+  "identifier" : "doc:\/\/Bases\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
 "doc://Bases/documentation/Bases": {
   "abstract" : [
     {
@@ -203,6 +239,17 @@
   "title" : "Base64.Encoder",
   "type" : "topic",
   "url" : "\/documentation\/bases\/base64\/encoder"
+},
+"doc://Bases/documentation/Bases/Base64/Encoder/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base64\/Encoder\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base64\/encoder\/equatable-implementations"
 },
 "doc://Bases/documentation/Bases/Base64/Encoder/alphabet": {
   "abstract" : [
@@ -406,6 +453,11 @@
   "title" : "pad",
   "type" : "topic",
   "url" : "\/documentation\/bases\/base64\/encoder\/pad"
+},
+"doc://Bases/s8SendableP": {
+  "identifier" : "doc:\/\/Bases\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

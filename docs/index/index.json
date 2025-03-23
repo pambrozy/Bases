@@ -1,0 +1,1244 @@
+{
+  "includedArchiveIdentifiers" : [
+    "Bases"
+  ],
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Encodings",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Built-in Alphabets",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/lowercase",
+                    "title" : "static let lowercase: Base16.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/uppercase",
+                    "title" : "static let uppercase: Base16.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/init(characters:)",
+                    "title" : "init(characters: [Character]) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/characters",
+                    "title" : "let characters: [Character]",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/values",
+                    "title" : "let values: [UInt8?]",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base16\/alphabet\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base16\/alphabet\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base16\/alphabet",
+                "title" : "Base16.Alphabet",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/decoder\/init(ignoreunknowncharacters:alphabet:)",
+                    "title" : "init(ignoreUnknownCharacters: Bool, alphabet: Base16.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/decoder\/alphabet",
+                    "title" : "let alphabet: Base16.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/decoder\/ignoreunknowncharacters",
+                    "title" : "let ignoreUnknownCharacters: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/decoder\/decode(_:)",
+                    "title" : "func decode(String) throws -> Data",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base16\/decoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base16\/decoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base16\/decoder",
+                "title" : "Base16.Decoder",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/encoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base16.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/encoder\/alphabet",
+                    "title" : "let alphabet: Base16.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base16\/encoder\/encode(_:)",
+                    "title" : "func encode<T>(T) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base16\/encoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base16\/encoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base16\/encoder",
+                "title" : "Base16.Encoder",
+                "type" : "struct"
+              }
+            ],
+            "path" : "\/documentation\/bases\/base16",
+            "title" : "Base16",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Built-in Alphabets",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/rfc4648",
+                    "title" : "static let rfc4648: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/zbase32",
+                    "title" : "static let zBase32: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/crockford",
+                    "title" : "static let crockford: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/base32hex",
+                    "title" : "static let base32hex: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/geohash",
+                    "title" : "static let geohash: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/wordsafe",
+                    "title" : "static let wordSafe: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/init(characters:padding:)",
+                    "title" : "init(characters: [[Character]], padding: Character?) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/characters",
+                    "title" : "let characters: [Character]",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/padding",
+                    "title" : "let padding: Character?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/values",
+                    "title" : "let values: [UInt8?]",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base32\/alphabet\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base32\/alphabet\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base32\/alphabet",
+                "title" : "Base32.Alphabet",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/decoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base32.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/decoder\/alphabet",
+                    "title" : "let alphabet: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/decoder\/decode(_:)",
+                    "title" : "func decode(String) throws -> Data",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base32\/decoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base32\/decoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base32\/decoder",
+                "title" : "Base32.Decoder",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/encoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base32.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/encoder\/alphabet",
+                    "title" : "let alphabet: Base32.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base32\/encoder\/encode(_:)",
+                    "title" : "func encode<T>(T) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base32\/encoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base32\/encoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base32\/encoder",
+                "title" : "Base32.Encoder",
+                "type" : "struct"
+              }
+            ],
+            "path" : "\/documentation\/bases\/base32",
+            "title" : "Base32",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Built-in Alphabets",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/standard",
+                    "title" : "static let standard: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/base64url",
+                    "title" : "static let base64url: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/utf7",
+                    "title" : "static let utf7: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/imapmailboxnames",
+                    "title" : "static let imapMailboxNames: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/mime",
+                    "title" : "static let mime: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/mime(linelength:)",
+                    "title" : "static func mime(lineLength: Int) throws -> Base64.Alphabet",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/init(characters:padding:lineseparator:)",
+                    "title" : "init(characters: [Character], padding: Character?, lineSeparator: LineSeparator?) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/characters",
+                    "title" : "let characters: [Character]",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/lineseparator",
+                    "title" : "let lineSeparator: LineSeparator?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/padding",
+                    "title" : "let padding: Character?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/values",
+                    "title" : "let values: [UInt8?]",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base64\/alphabet\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base64\/alphabet\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base64\/alphabet",
+                "title" : "Base64.Alphabet",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/decoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base64.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/decoder\/alphabet",
+                    "title" : "let alphabet: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/decoder\/decode(_:)",
+                    "title" : "func decode(String) throws -> Data",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base64\/decoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base64\/decoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base64\/decoder",
+                "title" : "Base64.Decoder",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/encoder\/init(alphabet:pad:)",
+                    "title" : "init(alphabet: Base64.Alphabet, pad: Bool)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/encoder\/alphabet",
+                    "title" : "let alphabet: Base64.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/encoder\/pad",
+                    "title" : "let pad: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base64\/encoder\/encode(_:)",
+                    "title" : "func encode<T>(T) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base64\/encoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base64\/encoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base64\/encoder",
+                "title" : "Base64.Encoder",
+                "type" : "struct"
+              }
+            ],
+            "path" : "\/documentation\/bases\/base64",
+            "title" : "Base64",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Built-in Alphabets",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/ascii",
+                    "title" : "static let ascii: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/btoalike",
+                    "title" : "static let btoaLike: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/adobeascii85",
+                    "title" : "static let adobeAscii85: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/rfc1924like",
+                    "title" : "static let rfc1924Like: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/z85",
+                    "title" : "static let z85: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/init(characters:startdelimeter:enddelimeter:fourzeros:fourspaces:)",
+                    "title" : "init(characters: [Character], startDelimeter: String?, endDelimeter: String?, fourZeros: Character?, fourSpaces: Character?) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/characters",
+                    "title" : "let characters: [Character]",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/enddelimeter",
+                    "title" : "let endDelimeter: String?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/fourspaces",
+                    "title" : "let fourSpaces: Character?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/fourzeros",
+                    "title" : "let fourZeros: Character?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/startdelimeter",
+                    "title" : "let startDelimeter: String?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/values",
+                    "title" : "let values: [UInt8?]",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base85\/alphabet\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base85\/alphabet\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base85\/alphabet",
+                "title" : "Base85.Alphabet",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/decoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base85.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/decoder\/alphabet",
+                    "title" : "let alphabet: Base85.Alphabet",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/decoder\/decode(_:)",
+                    "title" : "func decode(String) throws -> Data",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base85\/decoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base85\/decoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base85\/decoder",
+                "title" : "Base85.Decoder",
+                "type" : "struct"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/encoder\/init(alphabet:)",
+                    "title" : "init(alphabet: Base85.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/base85\/encoder\/encode(_:)",
+                    "title" : "func encode<T>(T) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/base85\/encoder\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/base85\/encoder\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/base85\/encoder",
+                "title" : "Base85.Encoder",
+                "type" : "struct"
+              }
+            ],
+            "path" : "\/documentation\/bases\/base85",
+            "title" : "Base85",
+            "type" : "enum"
+          },
+          {
+            "title" : "Line Separator",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/bases\/lineseparator\/init(separator:length:)",
+                "title" : "init(separator: String, length: Int) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/bases\/lineseparator\/length",
+                "title" : "let length: Int",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/bases\/lineseparator\/separator",
+                "title" : "let separator: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/lineseparator\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/lineseparator\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/bases\/lineseparator",
+            "title" : "LineSeparator",
+            "type" : "struct"
+          },
+          {
+            "title" : "Errors",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/bases\/basedecodingerror\/nonasciicharacters",
+                "title" : "case nonAsciiCharacters",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/bases\/basedecodingerror\/valuesnotinalphabet",
+                "title" : "case valuesNotInAlphabet",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/bases\/basedecodingerror\/wrongnumberofbytes",
+                "title" : "case wrongNumberOfBytes",
+                "type" : "case"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/basedecodingerror\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/basedecodingerror\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/basedecodingerror\/localizeddescription",
+                    "title" : "var localizedDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/basedecodingerror\/error-implementations",
+                "title" : "Error Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/bases\/basedecodingerror",
+            "title" : "BaseDecodingError",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/bases\/alphabeterror\/noasciivalue",
+                "title" : "case noAsciiValue",
+                "type" : "case"
+              },
+              {
+                "path" : "\/documentation\/bases\/alphabeterror\/wrongnumberofcharacters",
+                "title" : "case wrongNumberOfCharacters",
+                "type" : "case"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/alphabeterror\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/alphabeterror\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/alphabeterror\/localizeddescription",
+                    "title" : "var localizedDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/alphabeterror\/error-implementations",
+                "title" : "Error Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/bases\/alphabeterror",
+            "title" : "AlphabetError",
+            "type" : "enum"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Enumeration Cases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/bases\/lineseparatorerror\/nonpositivelength",
+                "title" : "case nonPositiveLength",
+                "type" : "case"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/lineseparatorerror\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/lineseparatorerror\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/lineseparatorerror\/localizeddescription",
+                    "title" : "var localizedDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/lineseparatorerror\/error-implementations",
+                "title" : "Error Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/bases\/lineseparatorerror",
+            "title" : "LineSeparatorError",
+            "type" : "enum"
+          },
+          {
+            "title" : "Articles",
+            "type" : "groupMarker"
+          },
+          {
+            "path" : "\/documentation\/bases\/built-in-alphabets",
+            "title" : "Built-In Alphabets",
+            "type" : "article"
+          },
+          {
+            "path" : "\/documentation\/bases\/usage",
+            "title" : "Usage",
+            "type" : "article"
+          },
+          {
+            "title" : "Extended Modules",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base16encoded:alphabet:)-1vw98",
+                    "title" : "init?(base16Encoded: Data, alphabet: Base16.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base16encoded:alphabet:)-8gdjr",
+                    "title" : "init?(base16Encoded: String, alphabet: Base16.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base32encoded:alphabet:)-1peaj",
+                    "title" : "init?(base32Encoded: Data, alphabet: Base32.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base32encoded:alphabet:)-6gvsz",
+                    "title" : "init?(base32Encoded: String, alphabet: Base32.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base85encoded:alphabet:)-1i0oy",
+                    "title" : "init?(base85Encoded: String, alphabet: Base85.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/init(base85encoded:alphabet:)-7cglx",
+                    "title" : "init?(base85Encoded: Data, alphabet: Base85.Alphabet)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/base16encodedstring(alphabet:)",
+                    "title" : "func base16EncodedString(alphabet: Base16.Alphabet) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/base32encodedstring(alphabet:)",
+                    "title" : "func base32EncodedString(alphabet: Base32.Alphabet) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/bases\/foundation\/data\/base85encodedstring(alphabet:)",
+                    "title" : "func base85EncodedString(alphabet: Base85.Alphabet) -> String",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/foundation\/data",
+                "title" : "Data",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Types",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy\/base16(alphabet:)",
+                        "title" : "static func base16(alphabet: Base16.Alphabet) -> JSONDecoder.DataDecodingStrategy",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy\/base32(alphabet:)",
+                        "title" : "static func base32(alphabet: Base32.Alphabet) -> JSONDecoder.DataDecodingStrategy",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy\/base85(alphabet:)",
+                        "title" : "static func base85(alphabet: Base85.Alphabet) -> JSONDecoder.DataDecodingStrategy",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/foundation\/jsondecoder\/datadecodingstrategy",
+                    "title" : "JSONDecoder.DataDecodingStrategy",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/foundation\/jsondecoder",
+                "title" : "JSONDecoder",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Extended Enumerations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Type Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base16(alphabet:)",
+                        "title" : "static func base16(alphabet: Base16.Alphabet) -> JSONEncoder.DataEncodingStrategy",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base32(alphabet:)",
+                        "title" : "static func base32(alphabet: Base32.Alphabet) -> JSONEncoder.DataEncodingStrategy",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy\/base85(alphabet:)",
+                        "title" : "static func base85(alphabet: Base85.Alphabet) -> JSONEncoder.DataEncodingStrategy",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/bases\/foundation\/jsonencoder\/dataencodingstrategy",
+                    "title" : "JSONEncoder.DataEncodingStrategy",
+                    "type" : "extension"
+                  }
+                ],
+                "path" : "\/documentation\/bases\/foundation\/jsonencoder",
+                "title" : "JSONEncoder",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/bases\/foundation",
+            "title" : "Foundation",
+            "type" : "extension"
+          }
+        ],
+        "path" : "\/documentation\/bases",
+        "title" : "Bases",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 2
+  }
+}

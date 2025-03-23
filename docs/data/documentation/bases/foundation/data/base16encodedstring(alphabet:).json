@@ -1,0 +1,403 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns a Base-16 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Bases\/documentation\/Bases",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+        "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base16EncodedString(alphabet:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Foundation",
+    "externalID" : "s:10Foundation4DataV5BasesE19base16EncodedString8alphabetSSAD6Base16O8AlphabetV_tF",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "base16EncodedString"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base16O",
+        "text" : "Base16"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+        "text" : "Alphabet"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Bases",
+        "relatedModules" : [
+          "Foundation"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Method",
+    "symbolKind" : "method",
+    "title" : "base16EncodedString(alphabet:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "base16EncodedString"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base16O",
+              "text" : "Base16"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+              "text" : "Alphabet"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The alphabet to use to encode the string.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "alphabet"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The Base-16 encoded string.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/bases\/foundation\/data\/base16encodedstring(alphabet:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Bases/documentation/Bases": {
+  "abstract" : [
+    {
+      "text" : "A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Bases",
+  "type" : "topic",
+  "url" : "\/documentation\/bases"
+},
+"doc://Bases/documentation/Bases/Base16": {
+  "abstract" : [
+    {
+      "text" : "The Base-16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Base16"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16"
+},
+"doc://Bases/documentation/Bases/Base16/Alphabet": {
+  "abstract" : [
+    {
+      "text" : "An alphabet defining a set of characters used for the Base-16 encoding.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Base16\/Alphabet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Alphabet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Base16.Alphabet",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/base16\/alphabet"
+},
+"doc://Bases/documentation/Bases/Foundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Foundation",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation"
+},
+"doc://Bases/documentation/Bases/Foundation/Data": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:10Foundation4DataV",
+      "text" : "Data"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Data"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Data",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data"
+},
+"doc://Bases/documentation/Bases/Foundation/Data/base16EncodedString(alphabet:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a Base-16 encoded string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "base16EncodedString"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O",
+      "text" : "Base16"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:5Bases6Base16O8AlphabetV",
+      "text" : "Alphabet"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/Bases\/documentation\/Bases\/Foundation\/Data\/base16EncodedString(alphabet:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "base16EncodedString(alphabet:)",
+  "type" : "topic",
+  "url" : "\/documentation\/bases\/foundation\/data\/base16encodedstring(alphabet:)"
+}
+}
+}

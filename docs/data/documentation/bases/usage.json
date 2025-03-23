@@ -302,7 +302,15 @@
         {
           "inlineContent" : [
             {
-              "text" : "To encode the struct, create an instance of JSONEncoder and",
+              "text" : "To encode the struct, create an instance of ",
+              "type" : "text"
+            },
+            {
+              "code" : "JSONEncoder",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and",
               "type" : "text"
             },
             {
@@ -363,7 +371,15 @@
         {
           "inlineContent" : [
             {
-              "text" : "To decode a JSON string, create an instance of JSONDecoder and",
+              "text" : "To decode a JSON string, create an instance of ",
+              "type" : "text"
+            },
+            {
+              "code" : "JSONDecoder",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and",
               "type" : "text"
             },
             {
@@ -421,7 +437,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [

@@ -179,6 +179,25 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The maximum line length (must be positive).",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "lineLength"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -210,25 +229,6 @@
         }
       ],
       "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The maximum line length (must be positive).",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "lineLength"
-        }
-      ]
     },
     {
       "content" : [
@@ -268,7 +268,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -276,6 +276,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Built-in-Alphabets",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base64\/Alphabet\/standard",

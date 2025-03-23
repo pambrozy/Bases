@@ -131,7 +131,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -139,6 +139,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Built-in-Alphabets",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Bases\/documentation\/Bases\/Base85\/Alphabet\/ascii",
