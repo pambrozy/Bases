@@ -9,7 +9,7 @@
 import Foundation
 
 /// A struct representing the line separator.
-public struct LineSeparator: Equatable {
+public struct LineSeparator: Hashable, Sendable {
     /// The string to insert when the length of the encoded string exceeds the ``length``.
     public let separator: String
     /// The maximum length of the encoded string, after which the ``separator`` will be inserted.

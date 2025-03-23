@@ -7,67 +7,59 @@
 //
 
 @testable import Bases
-import XCTest
+import Testing
 
-final class Bases32Tests: XCTestCase {
-    func testRFC() throws {
+@Suite("Base32")
+struct Bases32Tests {
+    @Test(arguments: [
+        ("", ""),
+        ("f", "MY======"),
+        ("fo", "MZXQ===="),
+        ("foo", "MZXW6==="),
+        ("foob", "MZXW6YQ="),
+        ("fooba", "MZXW6YTB"),
+        ("foobar", "MZXW6YTBOI======")
+    ])
+    func rfc(decodedString: String, encoded: String) throws {
         let encoder = Base32.Encoder(alphabet: .rfc4648)
         let decoder = Base32.Decoder(alphabet: .rfc4648)
 
-        let data = [
-            ("", ""),
-            ("f", "MY======"),
-            ("fo", "MZXQ===="),
-            ("foo", "MZXW6==="),
-            ("foob", "MZXW6YQ="),
-            ("fooba", "MZXW6YTB"),
-            ("foobar", "MZXW6YTBOI======")
-        ]
-
-        for (decodedString, encoded) in data {
-            guard let decoded = decodedString.data(using: .utf8) else {
-                throw StringEncodingError()
-            }
-            XCTAssertEqual(encoder.encode(decoded), encoded)
-            XCTAssertEqual(try decoder.decode(encoded), decoded)
-        }
+        let decoded = try #require(decodedString.data(using: .utf8))
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
     }
 
-    func testHEX() throws {
+    @Test(arguments: [
+        ("", ""),
+        ("f", "CO======"),
+        ("fo", "CPNG===="),
+        ("foo", "CPNMU==="),
+        ("foob", "CPNMUOG="),
+        ("fooba", "CPNMUOJ1"),
+        ("foobar", "CPNMUOJ1E8======")
+    ])
+    func hex(decodedString: String, encoded: String) throws {
         let encoder = Base32.Encoder(alphabet: .base32hex)
         let decoder = Base32.Decoder(alphabet: .base32hex)
 
-        let data = [
-            ("", ""),
-            ("f", "CO======"),
-            ("fo", "CPNG===="),
-            ("foo", "CPNMU==="),
-            ("foob", "CPNMUOG="),
-            ("fooba", "CPNMUOJ1"),
-            ("foobar", "CPNMUOJ1E8======")
-        ]
-
-        for (decodedString, encoded) in data {
-            guard let decoded = decodedString.data(using: .utf8) else {
-                throw StringEncodingError()
-            }
-            XCTAssertEqual(encoder.encode(decoded), encoded)
-            XCTAssertEqual(try decoder.decode(encoded), decoded)
-        }
+        let decoded = try #require(decodedString.data(using: .utf8))
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
     }
 
-    func testDecoding() {
+    @Test
+    func decoding() {
         let decoder = Base32.Decoder(alphabet: .rfc4648)
-        XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
+        #expect(throws: BaseDecodingError.nonAsciiCharacters) {
+            try decoder.decode("¡")
         }
-        XCTAssertThrowsError(try decoder.decode("_")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
+        #expect(throws: BaseDecodingError.valuesNotInAlphabet) {
+            try decoder.decode("_")
         }
-
     }
 
-    func testBuiltInRfc4648Alphabet() throws {
+    @Test
+    func builtInRfc4648Alphabet() throws {
         let rfc4648 = try Base32.Alphabet(
             characters: [
                 ["A", "a"], ["B", "b"], ["C", "c"], ["D", "d"], ["E", "e"], ["F", "f"], ["G", "g"], ["H", "h"],
@@ -77,10 +69,11 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: "="
         )
-        XCTAssertEqual(rfc4648, Base32.Alphabet.rfc4648)
+        #expect(rfc4648 == Base32.Alphabet.rfc4648)
     }
 
-    func testBuiltInZBase32Alphabet() throws {
+    @Test
+    func builtInZBase32Alphabet() throws {
         let zBase32 = try Base32.Alphabet(
             characters: [
                 ["y", "Y"], ["b", "B"], ["n", "N"], ["d", "D"], ["r", "R"], ["f", "F"], ["g", "G"], ["8", "8"],
@@ -90,10 +83,11 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: nil
         )
-        XCTAssertEqual(zBase32, Base32.Alphabet.zBase32)
+        #expect(zBase32 == Base32.Alphabet.zBase32)
     }
 
-    func testBuiltInCrockfordAlphabet() throws {
+    @Test
+    func builtInCrockfordAlphabet() throws {
         let crockford = try Base32.Alphabet(
             characters: [
                 ["0", "o", "O"],
@@ -110,10 +104,11 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: nil
         )
-        XCTAssertEqual(crockford, Base32.Alphabet.crockford)
+        #expect(crockford == Base32.Alphabet.crockford)
     }
 
-    func testBuiltInBase32HexAlphabet() throws {
+    @Test
+    func builtInBase32HexAlphabet() throws {
         let base32hex = try Base32.Alphabet(
             characters: [
                 ["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"],
@@ -123,10 +118,11 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: "="
         )
-        XCTAssertEqual(base32hex, Base32.Alphabet.base32hex)
+        #expect(base32hex == Base32.Alphabet.base32hex)
     }
 
-    func testBuiltInGeohashAlphabet() throws {
+    @Test
+    func builtInGeohashAlphabet() throws {
         let geohash = try Base32.Alphabet(
             characters: [
                 ["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"],
@@ -136,10 +132,11 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: nil
         )
-        XCTAssertEqual(geohash, Base32.Alphabet.geohash)
+        #expect(geohash == Base32.Alphabet.geohash)
     }
 
-    func testBuiltInWordSafeAlphabet() throws {
+    @Test
+    func builtInWordSafeAlphabet() throws {
         let wordSafe = try Base32.Alphabet(
             characters: [
                 ["2"], ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"],
@@ -149,25 +146,26 @@ final class Bases32Tests: XCTestCase {
             ],
             padding: nil
         )
-        XCTAssertEqual(wordSafe, Base32.Alphabet.wordSafe)
+        #expect(wordSafe == Base32.Alphabet.wordSafe)
     }
 
-    func testAlphabet() {
-        XCTAssertThrowsError(try Base32.Alphabet(characters: [], padding: nil)) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.wrongNumberOfCharacters)
+    @Test
+    func alphabet() {
+        #expect(throws: AlphabetError.wrongNumberOfCharacters) {
+            try Base32.Alphabet(characters: [], padding: nil)
         }
 
         let empty = [[Character]](repeating: [], count: 32)
-        XCTAssertThrowsError(try Base32.Alphabet(characters: empty, padding: nil)) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.wrongNumberOfCharacters)
+        #expect(throws: AlphabetError.wrongNumberOfCharacters) {
+            try Base32.Alphabet(characters: empty, padding: nil)
         }
 
         let notEmpty = [[Character]](repeating: ["¡"], count: 32)
-        XCTAssertThrowsError(try Base32.Alphabet(characters: notEmpty, padding: "¡")) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
+        #expect(throws: AlphabetError.noAsciiValue) {
+            try Base32.Alphabet(characters: notEmpty, padding: "¡")
         }
-        XCTAssertThrowsError(try Base32.Alphabet(characters: notEmpty, padding: nil)) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
+        #expect(throws: AlphabetError.noAsciiValue) {
+            try Base32.Alphabet(characters: notEmpty, padding: nil)
         }
     }
 }

@@ -14,7 +14,7 @@ public enum Base16 {
     // MARK: - Alphabet
 
     /// An alphabet defining a set of characters used for the Base-16 encoding.
-    public struct Alphabet {
+    public struct Alphabet: Hashable, Sendable {
         /// The ordered array mapping the 16 values to ASCII character codes.
         public let characters: [Character]
 
@@ -53,7 +53,7 @@ public enum Base16 {
     // MARK: - Encoder
 
     /// The Base-16 Encoder.
-    public struct Encoder {
+    public struct Encoder: Hashable, Sendable {
         /// The alphabet used to encode data.
         public let alphabet: Alphabet
 
@@ -82,7 +82,7 @@ public enum Base16 {
     // MARK: - Decoder
 
     /// The Base-16 Decoder.
-    public struct Decoder {
+    public struct Decoder: Hashable, Sendable {
         /// Whether to ignore characters not found in the alphabet.
         public let ignoreUnknownCharacters: Bool
 

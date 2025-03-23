@@ -14,7 +14,7 @@ public enum Base32 {
     // MARK: - Alphabet
 
     /// An alphabet defining a set of characters used for the Base-32 encoding.
-    public struct Alphabet: Equatable {
+    public struct Alphabet: Hashable, Sendable {
         /// The ordered array mapping the 32 values to ASCII character codes.
         public let characters: [Character]
 
@@ -77,7 +77,7 @@ public enum Base32 {
     // MARK: - Encoder
 
     /// The Base-32 Encoder.
-    public struct Encoder {
+    public struct Encoder: Hashable, Sendable {
         /// The alphabet used to encode data.
         public let alphabet: Alphabet
 
@@ -160,7 +160,7 @@ public enum Base32 {
     // MARK: - Decoder
 
     /// The Base-32 Decoder.
-    public struct Decoder {
+    public struct Decoder: Hashable, Sendable {
         /// The alphabet used to decode data.
         public let alphabet: Alphabet
 

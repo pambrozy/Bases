@@ -7,62 +7,58 @@
 //
 
 @testable import Bases
-import XCTest
+import Foundation
+import Testing
 
-final class Bases64Tests: XCTestCase {
-    func testStandard() throws {
+@Suite("Base64")
+struct Bases64Tests {
+    @Test(arguments: [
+        ("", ""),
+        ("f", "Zg=="),
+        ("fo", "Zm8="),
+        ("foo", "Zm9v"),
+        ("foob", "Zm9vYg=="),
+        ("fooba", "Zm9vYmE="),
+        ("foobar", "Zm9vYmFy")
+    ])
+    func standard(decodedString: String, encoded: String) throws {
         let encoder = Base64.Encoder(alphabet: .standard, pad: true)
         let decoder = Base64.Decoder(alphabet: .standard)
 
-        let data = [
-            ("", ""),
-            ("f", "Zg=="),
-            ("fo", "Zm8="),
-            ("foo", "Zm9v"),
-            ("foob", "Zm9vYg=="),
-            ("fooba", "Zm9vYmE="),
-            ("foobar", "Zm9vYmFy")
-        ]
-
-        for (decodedString, encoded) in data {
-            guard let decoded = decodedString.data(using: .utf8) else {
-                throw StringEncodingError()
-            }
-            XCTAssertEqual(encoder.encode(decoded), encoded)
-            XCTAssertEqual(try decoder.decode(encoded), decoded)
-        }
+        let decoded = try #require(decodedString.data(using: .utf8))
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
     }
 
-    func testMime() throws {
+    @Test
+    func mime() throws {
         let encoder = Base64.Encoder(alphabet: .mime, pad: true)
         let decoder = Base64.Decoder(alphabet: .mime)
 
-        guard let decoded = "01234567890123456789012345678901234567890123456789012345678901234567890123456789"
-            .data(using: .utf8)
-        else {
-            throw StringEncodingError()
-        }
+        let decoded = Data("01234567890123456789012345678901234567890123456789012345678901234567890123456789".utf8)
 
         let encoded = """
         MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2\r\n\
         Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODk=
         """
 
-        XCTAssertEqual(encoder.encode(decoded), encoded)
-        XCTAssertEqual(try decoder.decode(encoded), decoded)
+        #expect(encoder.encode(decoded) == encoded)
+        #expect(try decoder.decode(encoded) == decoded)
     }
 
-    func testDecoding() {
+    @Test
+    func decoding() {
         let decoder = Base64.Decoder(alphabet: .standard)
-        XCTAssertThrowsError(try decoder.decode("¡")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.nonAsciiCharacters)
+        #expect(throws: BaseDecodingError.nonAsciiCharacters) {
+            try decoder.decode("¡")
         }
-        XCTAssertThrowsError(try decoder.decode("_")) { error in
-            XCTAssertEqual(error as? BaseDecodingError, BaseDecodingError.valuesNotInAlphabet)
+        #expect(throws: BaseDecodingError.valuesNotInAlphabet) {
+            try decoder.decode("_")
         }
     }
 
-    func testBuiltInStandardAlphabet() throws {
+    @Test
+    func builtInStandardAlphabet() throws {
         let standard = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -73,10 +69,11 @@ final class Bases64Tests: XCTestCase {
             padding: "=",
             lineSeparator: nil
         )
-        XCTAssertEqual(standard, Base64.Alphabet.standard)
+        #expect(standard == Base64.Alphabet.standard)
     }
 
-    func testBuiltInBase64urlAlphabet() throws {
+    @Test
+    func builtInBase64urlAlphabet() throws {
         let base64url = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -87,10 +84,11 @@ final class Bases64Tests: XCTestCase {
             padding: "=",
             lineSeparator: nil
         )
-        XCTAssertEqual(base64url, Base64.Alphabet.base64url)
+        #expect(base64url == Base64.Alphabet.base64url)
     }
 
-    func testBuiltInUtf7Alphabet() throws {
+    @Test
+    func builtInUtf7Alphabet() throws {
         let utf7 = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -101,10 +99,11 @@ final class Bases64Tests: XCTestCase {
             padding: nil,
             lineSeparator: nil
         )
-        XCTAssertEqual(utf7, Base64.Alphabet.utf7)
+        #expect(utf7 == Base64.Alphabet.utf7)
     }
 
-    func testBuiltInImapMailboxNamesAlphabet() throws {
+    @Test
+    func builtInImapMailboxNamesAlphabet() throws {
         let imapMailboxNames = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -115,10 +114,11 @@ final class Bases64Tests: XCTestCase {
             padding: nil,
             lineSeparator: nil
         )
-        XCTAssertEqual(imapMailboxNames, Base64.Alphabet.imapMailboxNames)
+        #expect(imapMailboxNames == Base64.Alphabet.imapMailboxNames)
     }
 
-    func testBuiltInMimeAlphabet() throws {
+    @Test
+    func builtInMimeAlphabet() throws {
         let mime = try Base64.Alphabet(
             characters: [
                 "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -129,29 +129,24 @@ final class Bases64Tests: XCTestCase {
             padding: "=",
             lineSeparator: try LineSeparator(separator: "\r\n", length: 76)
         )
-        XCTAssertEqual(mime, Base64.Alphabet.mime)
+        #expect(mime == Base64.Alphabet.mime)
 
         let mimeFunction = try Base64.Alphabet.mime(lineLength: 76)
-        XCTAssertEqual(mimeFunction, Base64.Alphabet.mime)
+        #expect(mimeFunction == Base64.Alphabet.mime)
     }
 
-    func testAlphabet() {
-        XCTAssertThrowsError(
+    @Test
+    func alphabet() {
+        #expect(throws: AlphabetError.wrongNumberOfCharacters) {
             try Base64.Alphabet(characters: [], padding: nil, lineSeparator: nil)
-        ) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.wrongNumberOfCharacters)
         }
 
         let notEmpty = [Character](repeating: "¡", count: 64)
-        XCTAssertThrowsError(
+        #expect(throws: AlphabetError.noAsciiValue) {
             try Base64.Alphabet(characters: notEmpty, padding: "¡", lineSeparator: nil)
-        ) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
         }
-        XCTAssertThrowsError(
+        #expect(throws: AlphabetError.noAsciiValue) {
             try Base64.Alphabet(characters: notEmpty, padding: nil, lineSeparator: nil)
-        ) { error in
-            XCTAssertEqual(error as? AlphabetError, AlphabetError.noAsciiValue)
         }
     }
 }
