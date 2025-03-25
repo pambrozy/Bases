@@ -2,6 +2,8 @@
 
 ![build on macos](https://github.com/pambrozy/Bases/actions/workflows/macos.yaml/badge.svg)
 ![build on linux](https://github.com/pambrozy/Bases/actions/workflows/linux.yaml/badge.svg)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpambrozy%2FBases%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/pambrozy/Bases)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpambrozy%2FBases%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/pambrozy/Bases)
 
 A package for encoding and decoding data using Base16, Base32, Base64 and Base85 encodings.
 
